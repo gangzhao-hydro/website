@@ -7,7 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-My name is Zhao Gang (赵刚). I am currently working as an Assistant Professor at the [School of Environment and Society at the Tokyo Institute of Technology](https://www.titech.ac.jp/english/about/organization/schools/organization06). I conduct research under Professor Kinouchi. You can visit my research group here: [木内研究室](http://fa.depe.titech.ac.jp/kinouchi/index-j.html).
+<p style="text-align: justify;">
+My name is Zhao Gang (赵刚). I am currently working as an Assistant Professor at the [School of Environment and Society at the Tokyo Institute of Technology](https://www.titech.ac.jp/english/about/organization/schools/organization06). I conduct research with Prof. Tsuyoshi Kinouchi. You can visit our research group website here: [木内研究室](http://fa.depe.titech.ac.jp/kinouchi/index-j.html).
+</p>
+
 
 Research interests: Flood hazard and risk
 ======

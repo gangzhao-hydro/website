@@ -11,26 +11,19 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Physical Geography, University of Bristol, UK
+* M.S. in in Hydrology and Water Resources, Beijing Normal University, China
+* B.S. in in Hydrology and Water Resources, Wuhan University, China
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2024-present: Assistant Professor
+  * Tokyo Institute of Technology, Japan
+  * Group: Kinouchi Lab 
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2022-2023: Postdoc researcher
+  * University of Tokyo, Japan
+  * Group: Global Hydrodynamics Lab (with Dr Dai Yamazaki)
   
 Skills
 ======

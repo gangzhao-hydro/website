@@ -35,7 +35,7 @@ We hosted the first CaMa-Flood meeting on 5th and 6th July, 2024 (Friday and Sat
 </p>
 
 <p style="text-align: justify;">
-<img src="../images/CMF-meeting.jpg?raw=true" alt="Description of Figure 2">
+<img src="../images/CMF-meeting.JPG?raw=true" alt="Description of Figure 2">
 </p>
 
 <p style="text-align: justify;">

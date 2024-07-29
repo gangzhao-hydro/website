@@ -30,7 +30,7 @@ My research interests primarily focus on flood modeling, using physics-based mod
 News
 ======
 <p style="text-align: justify;">
-<strong>CaMa-Flood developer/user international meeting</strong><br>
+<strong>1. CaMa-Flood developer/user international meeting</strong><br>
 We hosted the first CaMa-Flood meeting on 5th and 6th July, 2024 (Friday and Saturday) at the Institute of Industrial Science, The University of Tokyo. Meeting details can be found on the <a href="https://global-hydrodynamics.github.io/cmf-meet-2024/">meeting webpage</a>.
 </p>
 

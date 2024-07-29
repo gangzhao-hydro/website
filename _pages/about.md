@@ -19,7 +19,7 @@ The need for accurate flood hazard maps has grown significantly due to increasin
 </p>
 
 <p style="text-align: justify;">
-<img src="../images/Figure1.jpg" alt="Figure 1">
+<img src="https://github.com/gangzhao-hydro/website/blob/master/images/Figure1.jpg" alt="Figure 1">
 </p>
 
 <p style="text-align: justify;">
@@ -35,7 +35,7 @@ We hosted the first CaMa-Flood meeting on 5th and 6th July, 2024 (Friday and Sat
 </p>
 
 <p style="text-align: justify;">
-<img src="../images/CMF-meeting.JPG" alt="CMF-meeting">
+<img src="https://github.com/gangzhao-hydro/website/blob/master/images/CMF-meeting.JPG" alt="CMF-meeting">
 </p>
 
 <p style="text-align: justify;">

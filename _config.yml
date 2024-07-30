@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "ZHAO Gang / Flood Hydro"
 title_separator          : "-"
 name                     : &name "ZHAO Gang"
 description              : &description "Assistant Professor@Tokyo_Tech"
@@ -22,9 +22,9 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "ZHAO GANG: 赵 刚"
+  name             : "ZHAO GANG"
   pronouns         : # example: "she/her"  
-  bio              : "Assistant Professor@Tokyo_Tech"
+  bio              : "Assistant Professor"
   location         : "Tokyo"
   employer         : "Tokyo Institute of Technology"
   uri              : # URL

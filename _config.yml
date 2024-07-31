@@ -12,9 +12,9 @@ title                    : "Flood Hydro Group"
 title_separator          : "-"
 name                     : &name "ZHAO Gang"
 description              : &description "Assistant Professor"
-url                      : https://gangzhao-hydro.github.io/website/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://gangzhao-hydro.github.io/website # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://gangzhao-hydro.github.io/website/"
+repository               : "https://gangzhao-hydro.github.io/website"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.

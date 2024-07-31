@@ -7,7 +7,7 @@ main:
     url: /teaching/      
         
   - title: "News"
-    url: /year-archive/
+    url: /talks/
     
   - title: "About myself"
     url: /cv/

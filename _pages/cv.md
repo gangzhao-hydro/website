@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Physical Geography, University of Bristol, UK
-* M.S. in Hydrology and Water Resources, Beijing Normal University, China
-* B.S. in Hydrology and Water Resources, Wuhan University, China
+* 2022: Ph.D in Physical Geography, University of Bristol, UK
+* 2016: M.S. in Hydrology and Water Resources, Beijing Normal University, China
+* 2013: B.S. in Hydrology and Water Resources, Wuhan University, China
 
 Work experience
 ======

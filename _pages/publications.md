@@ -45,16 +45,15 @@ author_profile: true
 {% assign published = site.publications | reject: "status", "under review" | sort: "date" | reverse %}
 
 ## Peer-reviewed (last five years)
-{% assign pubs = site.data.pubs_openalex | default: [] %}
+{% assign pubs = site.data.pubs_orcid | default: [] %}
 <ol class="publist" start="{{ count | plus: 1 }}">
   {% for p in pubs %}
     {% assign count = count | plus: 1 %}
     <li>
-      {{ p.authors }}.
+      {{ p.authors | default: site.author.name }}.
       {{ p.title }}.
       {% if p.venue %}<em>{{ p.venue }}</em>.{% endif %}
       {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">doi:{{ p.doi }}</a>{% endif %}
     </li>
   {% endfor %}
 </ol>
-

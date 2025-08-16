@@ -1,1 +1,471 @@
-[]
+[
+  {
+    "title": "A Systematic Analysis of Influencing Factors on Wind Resilience in a Coastal Historical District of China",
+    "authors": "Bo Huang, Z. Y. Ou, Gang Zhao, Junwu Wang, Lanjun Liu, Shuai Lv, Bin Huang, Xueqi Liu",
+    "venue": "Applied Sciences",
+    "doi": "10.3390/app15148116",
+    "publication_date": "2025-07-21"
+  },
+  {
+    "title": "Appropriate Resolution of Hillslope Land Cover Heterogeneity Improves Simulation of Terrestrial Energy and Water Budgets",
+    "authors": "Shuping Li, Dai Yamazaki, Tomohiro TOZAWA, Kota Adachi, Tomoko Nitta, Gang Zhao, Xudong Zhou, Kei Yoshimura",
+    "venue": null,
+    "doi": "10.22541/au.175269897.73564887/v1",
+    "publication_date": "2025-07-16"
+  },
+  {
+    "title": "High-Resolution Maize Yield Mapping across Africa using Earth Observation and Machine Learning, Deep Learning, and Foundation Model",
+    "authors": "Krishnagopal Halder, Frank Ewert, Anitabha Ghosh, Kaushik Muduchuru, Lily‐belle Sweet, Radwa El Shawi, Jan Timko, W. Jim Zheng, Karam Alsafadi, Gang Zhao, Michael Maerker, Manmeet Singh, Lei Guoging, Thomas Gaiser, Dominik Behrend, Yue Shi, Liangxiu Han, Masahiro Ryo, Amit Kumar Srivastava",
+    "venue": null,
+    "doi": "10.21203/rs.3.rs-6935279/v1",
+    "publication_date": "2025-07-02"
+  },
+  {
+    "title": "Cost-effectiveness of green infrastructure under climate change: model parameterization, uncertainty and sensitivity",
+    "authors": "Kexin Liu, Tsuyoshi Kinouchi, Gang Zhao, Fiona Johnson, Kefeng Zhang",
+    "venue": "Journal of Hydrology",
+    "doi": "10.1016/j.jhydrol.2025.133796",
+    "publication_date": "2025-07-02"
+  },
+  {
+    "title": "Mapping the World's River Levees: A Hyper‐Resolution Levee Database Based on Digital Elevation Models",
+    "authors": "Do Ngoc Khanh, Yugo Tsumura, Orie Sasaki, Kunio Shiraishi, Daiki Akimoto, Dai Yamazaki, Gang Zhao, Yukiko Hirabayashi",
+    "venue": "Geophysical Research Letters",
+    "doi": "10.1029/2024gl114121",
+    "publication_date": "2025-05-30"
+  },
+  {
+    "title": "The Forecasting Yield of Highland Barley and Wheat by Combining a Crop Model with Different Weather Fusion Methods in the Study of the Northeastern Tibetan Plateau",
+    "authors": "Peng Zhan Li, Liang He, Xuetong Wang, Mingwen Zhao, Fan Li, Ning Jin, Ning Yao, Chao Chen, Qi Tian, Bing Chen, Gang Zhao, Qiang Yu",
+    "venue": "Atmosphere",
+    "doi": "10.3390/atmos16050551",
+    "publication_date": "2025-05-06"
+  },
+  {
+    "title": "Benchmark Framework for Global River Models",
+    "authors": "Xudong Zhou, Dai Yamazaki, Menaka Revel, Gang Zhao, Prakat Modi",
+    "venue": "Journal of Advances in Modeling Earth Systems",
+    "doi": "10.1029/2024ms004379",
+    "publication_date": "2025-03-01"
+  },
+  {
+    "title": "The impact of the spatiotemporal structure of rainfall on flood response over a piedmont urban basin: An approach coupling machine learning and hydrologic modeling",
+    "authors": "Shugao Xu, Qianyang Wang, Jingshan Yu, Gang Zhao, Haoyu Ji, Qimeng Yue, Yuexin Zheng, Hu Xu, Honghua Li, Xiaolei Yao",
+    "venue": "Journal of Hydrology",
+    "doi": "10.1016/j.jhydrol.2025.133160",
+    "publication_date": "2025-03-01"
+  },
+  {
+    "title": "Developing a Levee Module for Global Flood Modelling with a Reach-Level Parameterization Approach",
+    "authors": "Gang Zhao, Dai Yamazaki, Yoshiaki Tanaka, Xudong Zhou, Shuping Li, Yang HU, Yukiko Hirabayashi, Jeffrey Neal, Paul Bates",
+    "venue": "Authorea (Authorea)",
+    "doi": "10.22541/essoar.173758251.14316524/v1",
+    "publication_date": "2025-01-22"
+  },
+  {
+    "title": "Improving Global Reservoir Parameterizations by Incorporating Flood Storage Capacity Data and Satellite Observations",
+    "authors": "Youjiang Shen, Dai Yamazaki, Yadu Pokhrel, Gang Zhao",
+    "venue": "Water Resources Research",
+    "doi": "10.1029/2024wr037620",
+    "publication_date": "2024-12-28"
+  },
+  {
+    "title": "Research on panoramic camera system for geotechnical borehole monitoring",
+    "authors": "Yongxian Xian, Xuejian Chen, C. Wang, Gang Zhao, Bo Peng",
+    "venue": null,
+    "doi": "10.1117/12.3046355",
+    "publication_date": "2024-12-13"
+  },
+  {
+    "title": "Rapid flood simulation and source area identification in urban environments via interpretable deep learning",
+    "authors": "Hancheng Ren, Bo Pang, Gang Zhao, Yuanyuan Liu, Hongping Zhang, Shu Liu",
+    "venue": "Journal of Hydrology",
+    "doi": "10.1016/j.jhydrol.2024.132551",
+    "publication_date": "2024-12-01"
+  },
+  {
+    "title": "Regional variation in the role of humidity on city-level heat-related mortality",
+    "authors": "Qiang Guo, Malcolm Mistry, Xudong Zhou, Gang Zhao, Kanon Kino, Bo Wen, Kei Yoshimura, Yusuke Satoh, Ivana Cvijanović, Yoonhee Kim, Chris Fook Sheng Ng, Ana M. Vicedo‐Cabrera, Ben Armstrong, Aleš Urban, Klea Katsouyanni, Pierre Masselot, Shilu Tong, Francesco Sera, Veronika Huber, Michelle L. Bell, Jan Kyselý, Antonio Gasparrini, Masahiro Hashizume, Taikan Oki, Rosana Abrutzky, Yuming Guo, Micheline de Sousa Zanotti Stagliorio Coêlho, Paulo Hilário Nascimento Saldiva, Éric Lavigne, Nicolás Valdés Ortega, Patricia Matus Correa, Haidong Kan, Samuel Osorio, Dominic Royé, Ene Indermitte, Hans Orru, Jouni J. K. Jaakkola, Niilo Ryti, Mathilde Pascal, Alexandra Schneider, Antonis Analitis, Alireza Entezari, Fatemeh Mayvaneh, Ariana Zeka, Patrick Goodman, Francesca de’Donato, Paola Michelozzi, Barrak Alahmad, César De la Cruz Valencia, Magali Hurtado‐Díaz, Ala Overcenco, Caroline Ameling, Danny Houthuijs, Shilpa Rao, Gabriel Carrasco-Escobar, Xerxes Seposo, Joana Madureira, Susana das Neves Pereira da Silva, Iulian‐Horia Holobâcă, Fiorella Acquaotta, Noah Scovronick, Ho Kim, Whanhee Lee, Aurelio Tobı́as, Carmen Íñiguez, Bertil Forsberg, Martina S. Ragettli, Shih-Chun Pan, Yue Leon Guo, Shanshan Li, Rochelle Schneider, Valentina Colistro, Antonella Zanobetti, Joel Schwartz, Do Van Dung, Trần Ngọc Đăng, Yasuhiro Honda",
+    "venue": "PNAS Nexus",
+    "doi": "10.1093/pnasnexus/pgae290",
+    "publication_date": "2024-07-25"
+  },
+  {
+    "title": "Overcoming mechanistic limitations of process-based phenological models: A data clustering method for large-scale applications",
+    "authors": "Jiaojiao Tan, Gang Zhao, Qi Tian, Lei Zheng, Xiaofeng Kang, Qinsi He, Yu Shi, Bin Chen, Dingrong Wu, Ning Yao, Liang He, Amit Kumar Srivastava, Yi Li, Jianqiang He, Hao Feng, Qiang Yu",
+    "venue": "Agricultural and Forest Meteorology",
+    "doi": "10.1016/j.agrformet.2024.110167",
+    "publication_date": "2024-07-24"
+  },
+  {
+    "title": "Enhancing practicality of deep learning for crop disease identification under field conditions: insights from model evaluation and crop‐specific approaches",
+    "authors": "Qi Tian, Gang Zhao, Changqing Yan, Linjia Yao, Junjie Qu, Ling Yin, Hao Feng, Ning Yao, Qiang Yu",
+    "venue": "Pest Management Science",
+    "doi": "10.1002/ps.8317",
+    "publication_date": "2024-07-19"
+  },
+  {
+    "title": "How Does Heavy Precipitation of Varying Durations Respond to Urbanization in China?",
+    "authors": "Xue Xie, Kairong Lin, Mingzhong Xiao, Xudong Zhou, Gang Zhao, Dai Yamazaki",
+    "venue": "Earth s Future",
+    "doi": "10.1029/2023ef004412",
+    "publication_date": "2024-07-01"
+  },
+  {
+    "title": "A new perspective of assessing flood impact with daily nighttime light remote sensing data",
+    "authors": "Yang HU, Dai Yamazaki, Xudong Zhou, Gang Zhao",
+    "venue": "Authorea (Authorea)",
+    "doi": "10.22541/essoar.171322645.52628361/v1",
+    "publication_date": "2024-04-16"
+  },
+  {
+    "title": "Benchmark Framework for Global River Model (Version 1.0)",
+    "authors": "Xudong Zhou, Dai Yamazaki, Menaka Revel, Gang Zhao, Prakat Modi",
+    "venue": "Authorea (Authorea)",
+    "doi": "10.22541/essoar.171255743.38640796/v1",
+    "publication_date": "2024-04-08"
+  },
+  {
+    "title": "Where in the World Are Vegetation Patterns Controlled by Hillslope Water Dynamics?",
+    "authors": "Shuping Li, Dai Yamazaki, Xudong Zhou, Gang Zhao",
+    "venue": "Water Resources Research",
+    "doi": "10.1029/2023wr036214",
+    "publication_date": "2024-04-01"
+  },
+  {
+    "title": "Scaling from global to regional river flow with global hydrological models: Choice matters",
+    "authors": "Tongbi Tu, Jiahao Wang, Gang Zhao, Tongtiegang Zhao, Xiaoli Dong",
+    "venue": "Journal of Hydrology",
+    "doi": "10.1016/j.jhydrol.2024.130960",
+    "publication_date": "2024-02-25"
+  },
+  {
+    "title": "A pricing strategy of dual-channel supply chain considering online reviews and in-sale service",
+    "authors": "Yong Liu, Chang-xue Lin, Gang Zhao",
+    "venue": "Journal of Business and Industrial Marketing",
+    "doi": "10.1108/jbim-06-2022-0248",
+    "publication_date": "2024-02-01"
+  },
+  {
+    "title": "Flood Susceptibility Assessment with Random Sampling Strategy in Ensemble Learning (RF and XGBoost)",
+    "authors": "Hancheng Ren, Bo Pang, Ping Bai, Gang Zhao, Shu Liu, Yuanyuan Liu, Min Li",
+    "venue": "Remote Sensing",
+    "doi": "10.3390/rs16020320",
+    "publication_date": "2024-01-12"
+  },
+  {
+    "title": "Overcoming Mechanistic Limitations of Process-Based Phenological Models: A Data Clustering Method for Large-Scale Applications",
+    "authors": "Jiaojiao Tan, Gang Zhao, Qi Tian, Lei Zheng, Xiaofeng Kang, Qinsi He, Yu Shi, Bin Chen, Dingrong Wu, Ning Yao, Liang He, Amit Kumar Srivastava, Yi Li, Jianqiang He, Hao Feng, Qiang Yu",
+    "venue": null,
+    "doi": "10.2139/ssrn.4685786",
+    "publication_date": "2024-01-01"
+  },
+  {
+    "title": "Flood Impact Assessment Using Nighttime Light Remote Sensing Data",
+    "authors": "Yang HU, Dai Yamazaki, Xudong Zhou, Gang Zhao",
+    "venue": null,
+    "doi": "10.2139/ssrn.5011700",
+    "publication_date": "2024-01-01"
+  },
+  {
+    "title": "Where in the world are vegetation patterns controlled by hillslope water dynamics?",
+    "authors": "Shuping Li, Dai Yamazaki, Xudong Zhou, Gang Zhao",
+    "venue": "Authorea (Authorea)",
+    "doi": "10.22541/essoar.169462021.12958323/v1",
+    "publication_date": "2023-09-13"
+  },
+  {
+    "title": "An urban hydrological model for flood simulation in piedmont cities: Case study of Jinan City, China",
+    "authors": "Yanjun Zhao, Jun Xia, Zongxue Xu, Yunfeng Qiao, Gang Zhao, Haoyue Zhang",
+    "venue": "Journal of Hydrology",
+    "doi": "10.1016/j.jhydrol.2023.130040",
+    "publication_date": "2023-08-23"
+  },
+  {
+    "title": "Pricing coordination of a dual-channel supply chain considering offline in-sale service",
+    "authors": "Shu-Qin Gu, Yong Liu, Gang Zhao",
+    "venue": "Journal of Retailing and Consumer Services",
+    "doi": "10.1016/j.jretconser.2023.103483",
+    "publication_date": "2023-06-30"
+  },
+  {
+    "title": "Flood Defense Standard Estimation Using Machine Learning and Its Representation in Large‐Scale Flood Hazard Modeling",
+    "authors": "Gang Zhao, Paul Bates, Jeffrey Neal, Dai Yamazaki",
+    "venue": "Water Resources Research",
+    "doi": "10.1029/2022wr032395",
+    "publication_date": "2023-03-24"
+  },
+  {
+    "title": "Assessing the Sensitivity of Vegetation Cover to Climate Change in the Yarlung Zangbo River Basin Using Machine Learning Algorithms",
+    "authors": "Lizhuang Cui, Bo Pang, Gang Zhao, Chunguang Ban, Meifang Ren, Dingzhi Peng, Depeng Zuo, Zhongfan Zhu",
+    "venue": "Remote Sensing",
+    "doi": "10.3390/rs14071556",
+    "publication_date": "2022-03-23"
+  },
+  {
+    "title": "Flood Defense Standard Estimation Using Machine Learning and Its Representation in Large-Scale Flood Hazard Modeling",
+    "authors": "Gang Zhao, Paul Bates, Jeffrey Neal",
+    "venue": null,
+    "doi": "10.1002/essoar.10510907.1",
+    "publication_date": "2022-03-23"
+  },
+  {
+    "title": "A study on aviation supply chain network controllability and control effect based on the topological structure",
+    "authors": "Gang Zhao, Changping Liu, Qi-sheng Zhao, Lin Min, Yingbao Yang",
+    "venue": "Mathematical Biosciences & Engineering",
+    "doi": "10.3934/mbe.2022293",
+    "publication_date": "2022-01-01"
+  },
+  {
+    "title": "Global DFs V2: Design flood estimation for global river networks based on machine learning models",
+    "authors": "Gang Zhao",
+    "venue": "Figshare",
+    "doi": "10.6084/m9.figshare.19603321",
+    "publication_date": "2022-01-01"
+  },
+  {
+    "title": "Design flood estimation for global river networks based on machine learning models",
+    "authors": "Gang Zhao, Paul Bates, Jeffrey Neal, Bo Pang",
+    "venue": "Hydrology and earth system sciences",
+    "doi": "10.5194/hess-25-5981-2021",
+    "publication_date": "2021-11-22"
+  },
+  {
+    "title": "Design flood estimation for global river networks based on machine learning models",
+    "authors": "Gang Zhao, Paul Bates, Jeffrey Neal, Bo Pang",
+    "venue": null,
+    "doi": "10.5194/hess-2020-594",
+    "publication_date": "2020-12-23"
+  },
+  {
+    "title": "Urban flood susceptibility assessment based on convolutional neural networks",
+    "authors": "Gang Zhao, Bo Pang, Zongxue Xu, Dingzhi Peng, Depeng Zuo",
+    "venue": "Journal of Hydrology",
+    "doi": "10.1016/j.jhydrol.2020.125235",
+    "publication_date": "2020-06-27"
+  },
+  {
+    "title": "Modelling the Vegetation Response to Climate Changes in the Yarlung Zangbo River Basin Using Random Forest",
+    "authors": "Kaige Chi, Bo Pang, Lizhuang Cui, Dingzhi Peng, Zhongfan Zhu, Gang Zhao, Shulan Shi",
+    "venue": "Water",
+    "doi": "10.3390/w12051433",
+    "publication_date": "2020-05-18"
+  },
+  {
+    "title": "Research Progress of Low Impact Development Technology",
+    "authors": "Gang Zhao, Dai Zong Meng",
+    "venue": "IOP Conference Series Earth and Environmental Science",
+    "doi": "10.1088/1755-1315/474/5/052033",
+    "publication_date": "2020-05-15"
+  },
+  {
+    "title": "Uncertainty Assessment of Urban Hydrological Modelling from a Multiple Objective Perspective",
+    "authors": "Bo Pang, Shulan Shi, Gang Zhao, Rong Shi, Dingzhi Peng, Zhongfan Zhu",
+    "venue": "Water",
+    "doi": "10.3390/w12051393",
+    "publication_date": "2020-05-14"
+  },
+  {
+    "title": "A grid-based distributed hydrological model for coal mined-out area",
+    "authors": "Meihong Ma, Lei Wen, Sijia Hao, Gang Zhao, Minpei Zhou, Changjun Liu, Huixiao Wang, Zhong‐Liang Wang",
+    "venue": "Journal of Hydrology",
+    "doi": "10.1016/j.jhydrol.2020.124990",
+    "publication_date": "2020-04-27"
+  },
+  {
+    "title": "An improved regional flood frequency analysis approach at the global scale",
+    "authors": "Gang Zhao, Paul Bates, Jeffrey Neal, Bo Pang",
+    "venue": null,
+    "doi": "10.5194/egusphere-egu2020-11288",
+    "publication_date": "2020-03-09"
+  },
+  {
+    "title": "The Impact of Dams on Design Floods in the Conterminous US",
+    "authors": "Gang Zhao, Paul Bates, Jeffrey Neal",
+    "venue": "Water Resources Research",
+    "doi": "10.1029/2019wr025380",
+    "publication_date": "2020-03-01"
+  },
+  {
+    "title": "A hybrid machine learning framework for real-time water level prediction in high sediment load reaches",
+    "authors": "Gang Zhao, Bo Pang, Zongxue Xu, Liyang Xu",
+    "venue": "Journal of Hydrology",
+    "doi": "10.1016/j.jhydrol.2019.124422",
+    "publication_date": "2019-12-05"
+  },
+  {
+    "title": "Inventory Cost Control Model for Fresh Product Retailers Based on DQN",
+    "authors": "Ruoying Sun, Peng Sun, Jiahui Li, Gang Zhao",
+    "venue": "2021 IEEE International Conference on Big Data (Big Data)",
+    "doi": "10.1109/bigdata47090.2019.9006424",
+    "publication_date": "2019-12-01"
+  },
+  {
+    "title": "Structural and State Controllability Study of the Supply Chain Network Based on the Complex Network Theory",
+    "authors": "Bing Yang, Minghua Hu, Gang Zhao, Yingbao Yang",
+    "venue": "網際網路技術學刊",
+    "doi": null,
+    "publication_date": "2019-11-01"
+  },
+  {
+    "title": "A Dynamic Adaptive Access Control Scheme for Hadoop Platform",
+    "authors": "Jiahui Li, Gang Zhao, Xuan Sun, Yan-Zhao Liu",
+    "venue": null,
+    "doi": "10.1109/ccet48361.2019.8989081",
+    "publication_date": "2019-08-01"
+  },
+  {
+    "title": "A Shared Container Transportation Mode in the Yangtze River",
+    "authors": "Daozheng Huang, Gang Zhao",
+    "venue": "Sustainability",
+    "doi": "10.3390/su11102886",
+    "publication_date": "2019-05-21"
+  },
+  {
+    "title": "A Model Designed for HSE Big Data Analysis in Petroleum Industry",
+    "authors": "Tongxin Wu, Yaming Mao, Gang Zhao",
+    "venue": "International Petroleum Technology Conference",
+    "doi": "10.2523/iptc-19508-ms",
+    "publication_date": "2019-03-22"
+  },
+  {
+    "title": "An enhanced inundation method for urban flood hazard mapping at the large catchment scale",
+    "authors": "Gang Zhao, Zongxue Xu, Bo Pang, Tongbi Tu, Liyang Xu, Longgang Du",
+    "venue": "Journal of Hydrology",
+    "doi": "10.1016/j.jhydrol.2019.02.008",
+    "publication_date": "2019-02-14"
+  },
+  {
+    "title": "Flash Flood Risk Analysis Based on Machine Learning Techniques in the Yunnan Province, China",
+    "authors": "Meihong Ma, Changjun Liu, Gang Zhao, Hongjie Xie, Pengfei Jia, Dacheng Wang, Huixiao Wang, Yang Hong",
+    "venue": "Remote Sensing",
+    "doi": "10.3390/rs11020170",
+    "publication_date": "2019-01-17"
+  },
+  {
+    "title": "The Research on personalized Access Control Scheme Based on User Portrait",
+    "authors": "Jiahui Li, Gang Zhao, Shuai Wang, Yanzhao Liu, Jin Chen",
+    "venue": null,
+    "doi": null,
+    "publication_date": "2019-01-01"
+  },
+  {
+    "title": "Assessment of urban flood susceptibility using semi-supervised machine learning model",
+    "authors": "Gang Zhao, Bo Pang, Zongxue Xu, Dingzhi Peng, Liyang Xu",
+    "venue": "The Science of The Total Environment",
+    "doi": "10.1016/j.scitotenv.2018.12.217",
+    "publication_date": "2018-12-15"
+  },
+  {
+    "title": "Multiple time scale analysis of sediment and runoff changes in the Lower Yellow River",
+    "authors": "Kaige Chi, Gang Zhao, Bo Pang, Ziqian Huang",
+    "venue": "Proceedings of the International Association of Hydrological Sciences",
+    "doi": "10.5194/piahs-379-357-2018",
+    "publication_date": "2018-06-05"
+  },
+  {
+    "title": "Sensitivity analysis of correlated outputs and its application to a dynamic model",
+    "authors": "Liyang Xu, Zhenzhou Lü, Luyi Li, Yan Shi, Gang Zhao",
+    "venue": "Environmental Modelling & Software",
+    "doi": "10.1016/j.envsoft.2018.03.026",
+    "publication_date": "2018-04-09"
+  },
+  {
+    "title": "Prediction of the Fourth Industrial Revolution Based on Time Series",
+    "authors": "Guangli Zhang, Gang Zhao, Liu Ming, Shuqin Yu, Yali Liu, Xiongfei Yang",
+    "venue": null,
+    "doi": "10.1145/3193063.3193070",
+    "publication_date": "2018-02-26"
+  },
+  {
+    "title": "Study on the Coordination Principle of Innovative Manufacturing Elements Based on Internet plus",
+    "authors": "Gang Zhao, Shuang Liu, Jiale Li, Ji Cao, Long-Gang Wu",
+    "venue": "De Gruyter eBooks",
+    "doi": "10.1515/9783110540048-070",
+    "publication_date": "2017-11-03"
+  },
+  {
+    "title": "Mapping flood susceptibility in mountainous areas on a national scale in China",
+    "authors": "Gang Zhao, Bo Pang, Zongxue Xu, Jiajia Yue, Tongbi Tu",
+    "venue": "The Science of The Total Environment",
+    "doi": "10.1016/j.scitotenv.2017.10.037",
+    "publication_date": "2017-10-17"
+  },
+  {
+    "title": "Estimation of Sunflower Seed Yield Using Partial Least Squares Regression and Artificial Neural Network Models",
+    "authors": "Wenzhi Zeng, Chi Xu, Gang Zhao, Jingwei Wu, Jiesheng Huang",
+    "venue": "Pedosphere",
+    "doi": "10.1016/s1002-0160(17)60336-9",
+    "publication_date": "2017-08-05"
+  },
+  {
+    "title": "Parameter optimization based two-layer SVM classification model for evaluation of maize breeding",
+    "authors": "Xin Mao, Gang Zhao, Ruoying Sun",
+    "venue": null,
+    "doi": "10.1109/fskd.2017.8393163",
+    "publication_date": "2017-07-01"
+  },
+  {
+    "title": "Statistical Downscaling of Temperature with the Random Forest Model",
+    "authors": "Bo Pang, Jiajia Yue, Gang Zhao, Zongxue Xu",
+    "venue": "Advances in Meteorology",
+    "doi": "10.1155/2017/7265178",
+    "publication_date": "2017-01-01"
+  },
+  {
+    "title": "Impact of urbanization on rainfall-runoff processes: case study in the Liangshui River Basin in Beijing, China",
+    "authors": "Zongxue Xu, Gang Zhao",
+    "venue": "Proceedings of the International Association of Hydrological Sciences",
+    "doi": "10.5194/piahs-373-7-2016",
+    "publication_date": "2016-05-12"
+  },
+  {
+    "title": "Breach growth in cohesive embankments due to overtopping",
+    "authors": "Gang Zhao",
+    "venue": null,
+    "doi": "10.4233/uuid:ee435ef7-f71c-493c-812b-68cf1e39aa33",
+    "publication_date": "2016-05-02"
+  },
+  {
+    "title": "Model and Dynamic Behavior of Risk Propagation in Complex Agricultural Supply Chain Networks in China and Their Topological Evolution",
+    "authors": "Gang Zhao, Shu-li Gong, Yingbao Yang, Min Lin",
+    "venue": "網際網路技術學刊",
+    "doi": "10.6138/jit.2016.17.3.20160225a",
+    "publication_date": "2016-05-01"
+  },
+  {
+    "title": "Responses of soil nitrous oxide emissions and nitrate leaching on climate, soil and management input data aggregation: a biogeochemistry model ensemble study",
+    "authors": "Edwin Haas, Ralf Kiese, Steffen Klatt, Holger Hoffmann, Gang Zhao, Frank Ewert, Julie Constantin, Hélène Raynal, Elsa Coucheney, Elisabeth Lewan, Carmen Sosa, René Dechow, Balázs Grosz, Henrik Eckersten, Thomas Gaiser, Matthias Kuhnert, Paul J. Smith, Kurt Christian Kersebaum, Claas Nendel, Xenia Specka, Enli Wang, Zhaoliang Zhang, Lutz Weihermüller",
+    "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+    "doi": null,
+    "publication_date": "2016-03-15"
+  },
+  {
+    "title": "Evaluating the precision of eight spatial sampling schemes in estimating regional means of simulated yield for two crops",
+    "authors": "Gang Zhao, Holger Hoffmann, Jagadeesh Yeluripati, Xenia Specka, Claas Nendel, Elsa Coucheney, Matthias Kuhnert, Fulu Tao, Julie Constantin, Hélène Raynal, Edmar Teixeira, Balázs Grosz, Luca Doro, Ralf Kiese, Henrik Eckersten, Edwin Haas, Davide Cammarano, Belay T. Kassie, Marco Moriondo, Giacomo Trombi, Marco Bindi, Christian Biernath, Florian Heinlein, Christian Klein, Eckart Priesack, Elisabet Lewan, Kurt Christian Kersebaum, Reimund P. Rötter, Pier Paolo Roggero, Daniel Wallach, Senthold Asseng, Stefan Siebert, Thomas Gaiser, Frank Ewert",
+    "venue": "Environmental Modelling & Software",
+    "doi": "10.1016/j.envsoft.2016.02.022",
+    "publication_date": "2016-02-27"
+  },
+  {
+    "title": "Spatial sampling of weather data for regional crop yield simulations",
+    "authors": "L.G.J. van Bussel, Frank Ewert, Gang Zhao, Holger Hoffmann, Andreas Enders, Daniel Wallach, Senthold Asseng, Guillermo A. Baigorria, Bruno Basso, Christian Biernath, Davide Cammarano, James Chryssanthacopoulos, Julie Constantin, Joshua Elliott, Michael Glotter, Florian Heinlein, Kurt Christian Kersebaum, Christian Klein, Claas Nendel, Eckart Priesack, Hélène Raynal, Consuelo C. Romero, Reimund P. Rötter, Xenia Specka, Fulu Tao",
+    "venue": "Agricultural and Forest Meteorology",
+    "doi": "10.1016/j.agrformet.2016.01.014",
+    "publication_date": "2016-01-23"
+  },
+  {
+    "title": "A Comparative Analysis on the Evacuation Time of Atrium-style Metro Station",
+    "authors": "Gang Zhao, Yanfeng Li, Yan-qiang Cui, Weihan Zhao",
+    "venue": "Procedia Engineering",
+    "doi": "10.1016/j.proeng.2016.01.076",
+    "publication_date": "2016-01-01"
+  },
+  {
+    "title": "The Design and Application of Digital Tourism Service System",
+    "authors": "Gang Zhao",
+    "venue": null,
+    "doi": "10.2991/ameii-16.2016.51",
+    "publication_date": "2016-01-01"
+  }
+]

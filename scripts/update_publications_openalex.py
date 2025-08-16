@@ -1,12 +1,11 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-import os, json, sys, time, math, re
+import os, json, sys, time
 from datetime import datetime, timezone
 import requests
 from pathlib import Path
 
-ORCID = os.getenv("ORCID", "0000-0002-0278-502X")  # 形如 0000-0002-1825-0097
-YEARS = int(os.getenv("YEARS", "5"))           # 近几年
+ORCID = os.getenv("ORCID", "YOUR_ORCID_HERE")
+YEARS = int(os.getenv("YEARS", "5"))
+MAILTO = os.getenv("MAILTO", "").strip()   # << 新增：从环境读取邮箱
 OUT = Path("_data/pubs_openalex.json")
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
@@ -45,9 +44,23 @@ def authors_from(work):
         if nm: names.append(nm)
     return ", ".join(names)
 
+HEADERS = {
+    "User-Agent": f"gh:{os.getenv('GITHUB_REPOSITORY','user/site')} (mailto:{MAILTO})",
+    "Accept": "application/json",
+}
+
 items, page = [], 1
 while True:
-    resp = requests.get(base, params={**params, "page": page, "mailto": "[email protected]"}, timeout=30)
+    params_req = {**params, "page": page}
+    if MAILTO:
+        params_req["mailto"] = MAILTO  # << 只有有邮箱时才加
+    resp = requests.get(base, params=params_req, headers=HEADERS, timeout=30)
+
+    if resp.status_code == 403:
+        print("OpenAlex 403：请确认提供了有效的邮箱 MAILTO，并稍后重试。30 秒后自动重试一次…")
+        time.sleep(30)
+        resp = requests.get(base, params=params_req, headers=HEADERS, timeout=30)
+
     resp.raise_for_status()
     data = resp.json()
     results = data.get("results", [])

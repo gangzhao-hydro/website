@@ -30,11 +30,10 @@ author_profile: true
     {% assign count = count | plus: 1 %}
     <li>
       {{ post.authors }}.
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>.
+      {{ post.title }}.
+      {% if post.venue %}<em>{{ post.venue }}</em>.{% endif %}
       {% if post.doi %}
         <a href="https://doi.org/{{ post.doi }}">doi:{{ post.doi }}</a>
-      {% elsif post.paperurl %}
-        <a href="{{ post.paperurl }}">link</a>
       {% endif %}
     </li>
   {% endfor %}
@@ -53,11 +52,10 @@ author_profile: true
       {% assign count = count | plus: 1 %}
       <li>
         {{ post.authors }}.
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>.
+        {{ post.title }}.
+        {% if post.venue %}<em>{{ post.venue }}</em>.{% endif %}
         {% if post.doi %}
           <a href="https://doi.org/{{ post.doi }}">doi:{{ post.doi }}</a>
-        {% elsif post.paperurl %}
-          <a href="{{ post.paperurl }}">link</a>
         {% endif %}
       </li>
     {% endif %}

@@ -11,6 +11,14 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.publications reversed %}
+## Under review
+{% assign under_review = site.publications | where: "status", "under review" %}
+{% for post in under_review %}
+  {% include archive-single.html %}
+{% endfor %}
+
+## Peer-reviewed (last five years)
+{% assign peer = site.publications | reject: "status", "under review" %}
+{% for post in peer reversed %}
   {% include archive-single.html %}
 {% endfor %}

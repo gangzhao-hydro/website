@@ -2,7 +2,7 @@ name: Update publications (OpenAlex)
 
 on:
   schedule:
-    - cron: '0 0 * * 1'   # 每周一 00:00 UTC 运行 ≈ 周一 09:00 JST
+    - cron: '0 0 * * 1'
   workflow_dispatch:
 
 permissions:
@@ -19,8 +19,9 @@ jobs:
       - run: pip install requests
       - name: Run updater
         env:
-          ORCID: 0000-0002-0278-502X   # ← 已填你的 ORCID
+          ORCID: 0000-0002-0278-502X
           YEARS: '5'
+          MAILTO: ${{ secrets.OPENALEX_MAILTO }}   # << 新增：从机密里取邮箱
         run: python scripts/update_publications_openalex.py
       - name: Commit changes
         run: |

@@ -1,8 +1,12 @@
 name: Update publications (OpenAlex)
+
 on:
   schedule:
-    - cron: '0 15 * * 1'   # 每周一 15:00 UTC（周二 0:00 JST 左右）
+    - cron: '0 0 * * 1'   # 每周一 00:00 UTC 运行 ≈ 周一 09:00 JST
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update:
@@ -15,7 +19,7 @@ jobs:
       - run: pip install requests
       - name: Run updater
         env:
-          ORCID: 0000-0002-0278-502X
+          ORCID: 0000-0002-0278-502X   # ← 已填你的 ORCID
           YEARS: '5'
         run: python scripts/update_publications_openalex.py
       - name: Commit changes
@@ -25,3 +29,4 @@ jobs:
           git add _data/pubs_openalex.json || true
           git commit -m "chore: update publications from OpenAlex" || echo "No changes"
           git push
+

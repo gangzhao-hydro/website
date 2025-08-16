@@ -3,12 +3,12 @@
 """
 OpenAlex updater (robust):
 1) Resolve OpenAlex Author ID by ORCID (tries both raw and https://orcid.org/ forms)
-2) Fetch works by author.id (journal articles in the last N years), with sane fallbacks
+2) Fetch works by author.id (journal articles in the last N years), with fallbacks
 3) Save to _data/pubs_openalex.json  for Jekyll to render
 
 ENV:
   ORCID  : e.g., 0000-0002-0278-502X
-  YEARS  : integer, default 5 (we can run 10 for first sync)
+  YEARS  : integer, default 5 (first sync can use 10)
   MAILTO : a valid email, required by OpenAlex; also set in User-Agent/From
 """
 import os
@@ -48,7 +48,6 @@ session.headers.update({
 
 def get_json(url: str, params: Dict, allow_retry403=True):
     """GET JSON with basic 403 retry."""
-    # Always include mailto
     params = dict(params)
     params["mailto"] = MAILTO
     resp = session.get(url, params=params, timeout=60)
@@ -149,12 +148,12 @@ if __name__ == "__main__":
     # Pass 1: journal articles with select/per-page=200
     items = fetch_works_by_author(author_id, from_year, journal_only=True, per_page=200, use_select=True)
 
-    # Fallback 1: if empty, drop 'select' (server-side filtering differences)
+    # Fallback 1: if empty, drop 'select'
     if not items:
         print("Fallback: retry without 'select' …")
         items = fetch_works_by_author(author_id, from_year, journal_only=True, per_page=100, use_select=False)
 
-    # Fallback 2: if still empty, include all types (not only journal-article)
+    # Fallback 2: if still empty, include all types
     if not items:
         print("Fallback: include all types (not only journal-article) …")
         items = fetch_works_by_author(author_id, from_year, journal_only=False, per_page=100, use_select=False)

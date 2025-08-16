@@ -1,13 +1,13 @@
-name: Update publications (OpenAlex)
+name: Update publications (ORCID → Crossref)
 
 on:
   schedule:
-    - cron: '0 0 * * 1'
+    - cron: '0 0 * * 1'   # 每周一 00:00 UTC ≈ 周一 09:00 JST
   workflow_dispatch:
   push:
     paths:
-      - '.github/workflows/update-pubs.yml'
-      - 'scripts/update_publications_openalex.py'
+      - '.github/workflows/update-pubs-orcid.yml'
+      - 'scripts/update_publications_orcid.py'
 
 permissions:
   contents: write
@@ -24,29 +24,17 @@ jobs:
 
       - run: pip install requests
 
-      - name: Debug MAILTO presence
-        env:
-          MAILTO: ${{ secrets.OPENALEX_MAILTO }}
-        run: |
-          if [ -z "$MAILTO" ]; then
-            echo "MAILTO is EMPTY. Please set repository secret OPENALEX_MAILTO to your email."
-            exit 1
-          else
-            echo "MAILTO is SET"
-          fi
-
       - name: Run updater (ORCID strict)
         env:
-          ORCID: 0000-0002-0278-502X
-          YEARS: '10'                # 首次可设大些，成功后改回 5
-          MAILTO: ${{ secrets.OPENALEX_MAILTO }}
-          STRICT_ORCID_ONLY: 'true'  # ★ 关键：只保留含你 ORCID 的 authorship
-        run: python scripts/update_publications_openalex.py
+          ORCID: 0000-0002-0278-502X   # ← 你的 ORCID
+          YEARS: '10'                  # 首次可设大些，稳定后改回 5
+          UA_EMAIL: ${{ secrets.OPENALEX_MAILTO }}  # 可复用你已有的邮箱，便于 API 识别
+        run: python scripts/update_publications_orcid.py
 
       - name: Commit changes
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add _data/pubs_openalex.json || true
-          git commit -m "chore: update publications from OpenAlex (ORCID strict)" || echo "No changes"
+          git add _data/pubs_orcid.json || true
+          git commit -m "chore: update publications from ORCID→Crossref" || echo "No changes"
           git push

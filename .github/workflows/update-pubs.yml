@@ -2,8 +2,12 @@ name: Update publications (OpenAlex)
 
 on:
   schedule:
-    - cron: '0 0 * * 1'   # 每周一 00:00 UTC ≈ 周一 09:00 JST
+    - cron: '0 0 * * 1'
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/update-pubs.yml'
+      - 'scripts/update_publications_openalex.py'
 
 permissions:
   contents: write

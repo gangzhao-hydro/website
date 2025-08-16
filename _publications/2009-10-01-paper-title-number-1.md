@@ -6,7 +6,6 @@ venue: "Journal of Hydrology"
 authors: "Zhao, G.; Liu, R.; Yang, M.; Tu, T.; Ma, M.; Hong, Y.; Wang, X."
 doi: "10.1016/j.jhydrol.2021.127222"
 paperurl: "https://www.sciencedirect.com/science/article/pii/S0022169421012725"
-excerpt: "An LSTM-based approach delivers reliable large-scale flash flood warnings in mountainous and hilly regions of China."
 ---
 
 

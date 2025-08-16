@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 import requests
 from pathlib import Path
 
-ORCID = os.getenv("ORCID", "YOUR_ORCID_HERE")  # 形如 0000-0002-1825-0097
+ORCID = os.getenv("ORCID", "0000-0002-0278-502X")  # 形如 0000-0002-1825-0097
 YEARS = int(os.getenv("YEARS", "5"))           # 近几年
 OUT = Path("_data/pubs_openalex.json")
 OUT.parent.mkdir(parents=True, exist_ok=True)

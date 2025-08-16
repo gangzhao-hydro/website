@@ -50,7 +50,7 @@ author_profile: true
   {% for p in pubs %}
     {% assign count = count | plus: 1 %}
     <li>
-      {{ p.authors | default: site.author.name }}.
+      {{ p.authors | default: site.author.name }}{% if p.publication_date %} ({{ p.publication_date | date: "%Y" }}){% endif %}.
       {{ p.title }}.
       {% if p.venue %}<em>{{ p.venue }}</em>.{% endif %}
       {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">doi:{{ p.doi }}</a>{% endif %}

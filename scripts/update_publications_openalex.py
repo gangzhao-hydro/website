@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-OpenAlex updater (robust against 403):
-1) Resolve OpenAlex Author ID by ORCID (tries both raw and https://orcid.org/ forms),
-   and use the compact id (e.g., A5072991521) to avoid URL encoding issues.
-2) Fetch works by author.id using cursor pagination (smaller per-page, no select by default).
-3) Auto-fallback to looser params on 403 and continue.
-4) Save to _data/pubs_openalex.json for Jekyll.
+OpenAlex updater with STRICT ORCID filter:
+1) Resolve your OpenAlex author ID by ORCID (tries raw and https forms),
+   use compact id (e.g., A5072991521).
+2) Fetch works via cursor pagination (small batches), tolerant to 403.
+3) **Keep ONLY works whose authorship contains your ORCID** when STRICT_ORCID_ONLY=true.
+4) Save to _data/pubs_openalex.json (title/authors/venue/doi/publication_date).
 
 ENV:
-  ORCID  : e.g., 0000-0002-0278-502X
-  YEARS  : integer, default 5 (first sync can use 10)
-  MAILTO : a valid email, required by OpenAlex; also set in User-Agent/From
+  ORCID              : e.g., 0000-0002-0278-502X
+  YEARS              : integer, default 5 (first sync can be 10)
+  MAILTO             : valid email for OpenAlex (set repo secret OPENALEX_MAILTO)
+  STRICT_ORCID_ONLY  : 'true' / 'false' (default 'true')
 """
 import os
 import sys
@@ -26,6 +27,7 @@ import requests
 ORCID  = os.getenv("ORCID", "").strip()
 YEARS  = int(os.getenv("YEARS", "5"))
 MAILTO = os.getenv("MAILTO", "").strip()
+STRICT = (os.getenv("STRICT_ORCID_ONLY", "true").strip().lower() == 'true')
 
 OUT = Path("_data/pubs_openalex.json")
 OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -49,7 +51,6 @@ session.headers.update({
 
 
 def get_json(url: str, params: Dict, allow_retry403=True):
-    """GET JSON with basic 403 retry."""
     qp = dict(params)
     qp["mailto"] = MAILTO
     resp = session.get(url, params=qp, timeout=60)
@@ -62,7 +63,6 @@ def get_json(url: str, params: Dict, allow_retry403=True):
 
 
 def resolve_author_id(orcid: str) -> str:
-    """Find OpenAlex author.id by ORCID. Return compact id (e.g., A5072991521)."""
     for q in (orcid, f"https://orcid.org/{orcid}"):
         data = get_json(BASE_AUTHORS, {
             "filter": f"orcid:{q}",
@@ -105,7 +105,27 @@ def authors_from(work: Dict):
     return ", ".join(names)
 
 
-def fetch_with_cursor(author_id: str, from_year: int, journal_only=True, per_page=50, use_select=False) -> List[Dict]:
+def has_orcid_authorship(work: Dict, orcid: str) -> bool:
+    target1 = orcid
+    target2 = f"https://orcid.org/{orcid}"
+    for a in work.get("authorships") or []:
+        author = a.get("author") or {}
+        aorc = (author.get("orcid") or "").strip()
+        if aorc == target1 or aorc == target2 or aorc.endswith(orcid):
+            return True
+    return False
+
+
+def has_authorid_authorship(work: Dict, compact_id: str) -> bool:
+    for a in work.get("authorships") or []:
+        author = a.get("author") or {}
+        aid = (author.get("id") or "").split('/')[-1]
+        if aid == compact_id:
+            return True
+    return False
+
+
+def fetch_with_cursor(author_id: str, from_year: int, journal_only=True, per_page=50) -> List[Dict]:
     items: List[Dict] = []
     cursor = "*"
     while True:
@@ -118,24 +138,11 @@ def fetch_with_cursor(author_id: str, from_year: int, journal_only=True, per_pag
             "per-page": per_page,
             "cursor": cursor,
         }
-        if use_select:
-            params["select"] = "id,display_name,publication_date,doi,ids,authorships,host_venue,primary_location"
-        try:
-            data = get_json(BASE_WORKS, params)
-        except requests.HTTPError as e:
-            # Bubble up to try another strategy
-            raise e
+        data = get_json(BASE_WORKS, params)
         results = data.get("results", [])
         if not results:
             break
-        for w in results:
-            items.append({
-                "title": w.get("display_name"),
-                "authors": authors_from(w),
-                "venue": venue_from(w),
-                "doi": doi_from(w),
-                "publication_date": w.get("publication_date"),
-            })
+        items.extend(results)
         cursor = (data.get("meta") or {}).get("next_cursor")
         if not cursor:
             break
@@ -148,52 +155,70 @@ if __name__ == "__main__":
     from_year  = this_year - YEARS + 1
 
     try:
-        author_compact_id = resolve_author_id(ORCID)  # e.g., A5072991521
+        author_compact_id = resolve_author_id(ORCID)
     except Exception as e:
         print(f"ERROR: {e}")
         sys.exit(1)
 
     print(f"Using OpenAlex author id: {author_compact_id}")
 
-    # Attempt chain: conservative → broader
-    attempts = [
-        {"journal_only": True,  "per_page": 50, "use_select": False},
-        {"journal_only": True,  "per_page": 25, "use_select": False},
-        {"journal_only": False, "per_page": 25, "use_select": False},
-    ]
-
-    items: List[Dict] = []
-
-    for cfg in attempts:
+    raw = []
+    # 依次放宽尝试
+    for (journal_only, per_page) in [ (True,50), (True,25), (False,25) ]:
         try:
-            items = fetch_with_cursor(
-                author_compact_id,
-                from_year,
-                journal_only=cfg["journal_only"],
-                per_page=cfg["per_page"],
-                use_select=cfg["use_select"],
-            )
-            if items:
+            raw = fetch_with_cursor(author_compact_id, from_year, journal_only, per_page)
+            if raw:
                 break
         except requests.HTTPError as e:
-            print(f"WARNING: fetch attempt failed ({cfg}) with {e}. Trying next…")
+            print(f"WARNING: fetch failed (journal_only={journal_only}, per_page={per_page}) with {e}. Next…")
             time.sleep(3)
             continue
 
-    # Final cleanup
-    def yr(x):
-        d = x.get("publication_date") or ""
-        return int(d[:4]) if len(d) >= 4 and d[:4].isdigit() else 0
+    if not raw:
+        print("Saved 0 records to _data/pubs_openalex.json (no results).")
+        OUT.write_text("[]", encoding="utf-8")
+        sys.exit(0)
 
-    seen = set()
-    cleaned: List[Dict] = []
-    for x in items:
-        if yr(x) >= from_year and x.get("title"):
-            key = (x.get("title"), x.get("doi"))
+    # 先按年份过滤
+    def yr(work):
+        d = (work.get("publication_date") or "")[:4]
+        return int(d) if d.isdigit() else 0
+    raw = [w for w in raw if yr(w) >= from_year]
+
+    # ★ 关键：严格 ORCID 过滤；若关闭 STRICT，则退而取 author.id 过滤
+    if STRICT:
+        filtered = [w for w in raw if has_orcid_authorship(w, ORCID)]
+        print(f"ORCID-strict filter: {len(filtered)} / {len(raw)} kept.")
+        items = filtered
+    else:
+        filtered1 = [w for w in raw if has_orcid_authorship(w, ORCID)]
+        filtered2 = [w for w in raw if has_authorid_authorship(w, author_compact_id)]
+        # 去重
+        seen = set()
+        items = []
+        for w in filtered1 + filtered2:
+            key = (w.get('id'), w.get('doi'))
             if key not in seen:
                 seen.add(key)
-                cleaned.append(x)
+                items.append(w)
+        print(f"Hybrid filter: kept {len(items)} from {len(raw)}.")
 
-    cleaned.sort(key=lambda x: x.get("publication_date") or "", reverse=True)
-    OUT.write_text(json.dumps(cleaned, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Saved {len(cleaned)} records to {OUT}")
+    # 映射为简洁字段
+    out = []
+    seen2 = set()
+    for w in items:
+        key = (w.get('display_name'), doi_from(w))
+        if key in seen2:
+            continue
+        seen2.add(key)
+        out.append({
+            "title": w.get("display_name"),
+            "authors": authors_from(w),
+            "venue": venue_from(w),
+            "doi": doi_from(w),
+            "publication_date": w.get("publication_date"),
+        })
+
+    out.sort(key=lambda x: x.get("publication_date") or "", reverse=True)
+    OUT.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Saved {len(out)} records to {OUT}")

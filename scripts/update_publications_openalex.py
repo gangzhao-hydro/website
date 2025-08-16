@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-OpenAlex updater (robust):
-1) Resolve OpenAlex Author ID by ORCID (tries both raw and https://orcid.org/ forms)
-2) Fetch works by author.id (journal articles in the last N years), with fallbacks
-3) Save to _data/pubs_openalex.json  for Jekyll to render
+OpenAlex updater (robust against 403):
+1) Resolve OpenAlex Author ID by ORCID (tries both raw and https://orcid.org/ forms),
+   and use the compact id (e.g., A5072991521) to avoid URL encoding issues.
+2) Fetch works by author.id using cursor pagination (smaller per-page, no select by default).
+3) Auto-fallback to looser params on 403 and continue.
+4) Save to _data/pubs_openalex.json for Jekyll.
 
 ENV:
   ORCID  : e.g., 0000-0002-0278-502X
@@ -48,19 +50,19 @@ session.headers.update({
 
 def get_json(url: str, params: Dict, allow_retry403=True):
     """GET JSON with basic 403 retry."""
-    params = dict(params)
-    params["mailto"] = MAILTO
-    resp = session.get(url, params=params, timeout=60)
+    qp = dict(params)
+    qp["mailto"] = MAILTO
+    resp = session.get(url, params=qp, timeout=60)
     if resp.status_code == 403 and allow_retry403:
-        print("WARNING: 403 forbidden, retrying in 20s…", file=sys.stderr)
-        time.sleep(20)
-        resp = session.get(url, params=params, timeout=60)
+        print("WARNING: 403 forbidden, retrying in 15s…", file=sys.stderr)
+        time.sleep(15)
+        resp = session.get(url, params=qp, timeout=60)
     resp.raise_for_status()
     return resp.json()
 
 
 def resolve_author_id(orcid: str) -> str:
-    """Find OpenAlex author.id by ORCID. Try both raw and https scheme."""
+    """Find OpenAlex author.id by ORCID. Return compact id (e.g., A5072991521)."""
     for q in (orcid, f"https://orcid.org/{orcid}"):
         data = get_json(BASE_AUTHORS, {
             "filter": f"orcid:{q}",
@@ -71,9 +73,11 @@ def resolve_author_id(orcid: str) -> str:
         results = data.get("results", [])
         if results:
             author = results[0]
-            print(f"Resolved ORCID -> OpenAlex author: {author.get('display_name')} ({author.get('id')})  works={author.get('works_count')}")
-            return author["id"]  # e.g., "https://openalex.org/A1969205031"
-    raise RuntimeError("No OpenAlex author found for this ORCID. Check ORCID or try widening YEARS.")
+            full_id = author.get("id")  # e.g., https://openalex.org/A5072991521
+            compact = full_id.split("/")[-1]
+            print(f"Resolved ORCID -> OpenAlex author: {author.get('display_name')} ({full_id})  works={author.get('works_count')}")
+            return compact
+    raise RuntimeError("No OpenAlex author found for this ORCID.")
 
 
 def doi_from(work: Dict):
@@ -101,22 +105,26 @@ def authors_from(work: Dict):
     return ", ".join(names)
 
 
-def fetch_works_by_author(author_id: str, from_year: int, journal_only=True, per_page=200, use_select=True) -> List[Dict]:
-    items, page = [], 1
-    flt = [f"authorships.author.id:{author_id}", f"from_publication_date:{from_year}-01-01"]
-    if journal_only:
-        flt.append("type:journal-article")
-    filt_str = ",".join(flt)
+def fetch_with_cursor(author_id: str, from_year: int, journal_only=True, per_page=50, use_select=False) -> List[Dict]:
+    items: List[Dict] = []
+    cursor = "*"
     while True:
+        flt = [f"authorships.author.id:{author_id}", f"from_publication_date:{from_year}-01-01"]
+        if journal_only:
+            flt.append("type:journal-article")
         params = {
-            "filter": filt_str,
+            "filter": ",".join(flt),
             "sort": "publication_date:desc",
             "per-page": per_page,
-            "page": page,
+            "cursor": cursor,
         }
         if use_select:
             params["select"] = "id,display_name,publication_date,doi,ids,authorships,host_venue,primary_location"
-        data = get_json(BASE_WORKS, params)
+        try:
+            data = get_json(BASE_WORKS, params)
+        except requests.HTTPError as e:
+            # Bubble up to try another strategy
+            raise e
         results = data.get("results", [])
         if not results:
             break
@@ -128,8 +136,10 @@ def fetch_works_by_author(author_id: str, from_year: int, journal_only=True, per
                 "doi": doi_from(w),
                 "publication_date": w.get("publication_date"),
             })
-        page += 1
-        time.sleep(0.2)
+        cursor = (data.get("meta") or {}).get("next_cursor")
+        if not cursor:
+            break
+        time.sleep(0.15)
     return items
 
 
@@ -138,33 +148,45 @@ if __name__ == "__main__":
     from_year  = this_year - YEARS + 1
 
     try:
-        author_id = resolve_author_id(ORCID)
+        author_compact_id = resolve_author_id(ORCID)  # e.g., A5072991521
     except Exception as e:
         print(f"ERROR: {e}")
         sys.exit(1)
 
-    print(f"Using OpenAlex author id: {author_id}")
+    print(f"Using OpenAlex author id: {author_compact_id}")
 
-    # Pass 1: journal articles with select/per-page=200
-    items = fetch_works_by_author(author_id, from_year, journal_only=True, per_page=200, use_select=True)
+    # Attempt chain: conservative → broader
+    attempts = [
+        {"journal_only": True,  "per_page": 50, "use_select": False},
+        {"journal_only": True,  "per_page": 25, "use_select": False},
+        {"journal_only": False, "per_page": 25, "use_select": False},
+    ]
 
-    # Fallback 1: if empty, drop 'select'
-    if not items:
-        print("Fallback: retry without 'select' …")
-        items = fetch_works_by_author(author_id, from_year, journal_only=True, per_page=100, use_select=False)
+    items: List[Dict] = []
 
-    # Fallback 2: if still empty, include all types
-    if not items:
-        print("Fallback: include all types (not only journal-article) …")
-        items = fetch_works_by_author(author_id, from_year, journal_only=False, per_page=100, use_select=False)
+    for cfg in attempts:
+        try:
+            items = fetch_with_cursor(
+                author_compact_id,
+                from_year,
+                journal_only=cfg["journal_only"],
+                per_page=cfg["per_page"],
+                use_select=cfg["use_select"],
+            )
+            if items:
+                break
+        except requests.HTTPError as e:
+            print(f"WARNING: fetch attempt failed ({cfg}) with {e}. Trying next…")
+            time.sleep(3)
+            continue
 
-    # Final sanity: filter by year >= from_year, drop empties/dupes
+    # Final cleanup
     def yr(x):
         d = x.get("publication_date") or ""
         return int(d[:4]) if len(d) >= 4 and d[:4].isdigit() else 0
 
     seen = set()
-    cleaned = []
+    cleaned: List[Dict] = []
     for x in items:
         if yr(x) >= from_year and x.get("title"):
             key = (x.get("title"), x.get("doi"))

@@ -2,7 +2,7 @@ name: Update publications (OpenAlex)
 
 on:
   schedule:
-    - cron: '0 0 * * 1'   # 每周一 00:00 UTC 运行 ≈ 周一 09:00 JST
+    - cron: '0 0 * * 1'   # 每周一 00:00 UTC ≈ 周一 09:00 JST
   workflow_dispatch:
 
 permissions:
@@ -31,20 +31,22 @@ jobs:
             echo "MAILTO is SET"
           fi
 
-      - name: Sanity check OpenAlex (curl)
+      - name: Sanity check OpenAlex (curl: authors by ORCID)
         env:
           MAILTO: ${{ secrets.OPENALEX_MAILTO }}
         run: |
           set -e
-          echo "Hitting OpenAlex with mailto…"
-          curl -sS "https://api.openalex.org/works?per-page=1&mailto=${MAILTO}" \
-            -H "User-Agent: OpenAlexUpdater/1.0 (+mailto:${MAILTO})" \
-            -H "Accept: application/json" | head -c 200 || true
+          echo "Check 1: authors?filter=orcid:ORCID"
+          curl -sS "https://api.openalex.org/authors?filter=orcid:0000-0002-0278-502X&per-page=1&select=id,display_name,works_count&mailto=${MAILTO}" \
+            -H "User-Agent: OpenAlexUpdater/1.0 (+mailto:${MAILTO})" -H "Accept: application/json" | head -c 400 || true
+          echo "\nCheck 2: authors?filter=orcid:https://orcid.org/ORCID"
+          curl -sS "https://api.openalex.org/authors?filter=orcid:https://orcid.org/0000-0002-0278-502X&per-page=1&select=id,display_name,works_count&mailto=${MAILTO}" \
+            -H "User-Agent: OpenAlexUpdater/1.0 (+mailto:${MAILTO})" -H "Accept: application/json" | head -c 400 || true
 
       - name: Run updater
         env:
           ORCID: 0000-0002-0278-502X
-          YEARS: '5'
+          YEARS: '10'                     # 先拉近10年，确保有数据；稳定后可改回 5
           MAILTO: ${{ secrets.OPENALEX_MAILTO }}
         run: python scripts/update_publications_openalex.py
 

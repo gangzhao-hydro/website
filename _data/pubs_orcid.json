@@ -1,0 +1,247 @@
+[
+  {
+    "title": "A Systematic Analysis of Influencing Factors on Wind Resilience in a Coastal Historical District of China",
+    "venue": "Applied Sciences",
+    "publication_date": "2025-07-21",
+    "authors": "Huang, Bo, Ou, Zhenmin, Zhao, Gang, Wang, Junwu, Liu, Lanjun, Lv, Sijun, Huang, Bin, Liu, Xueqi",
+    "doi": "10.3390/app15148116"
+  },
+  {
+    "title": "Exploration of the spatiotemporal characteristics and triggering factors of flash flood in China",
+    "venue": "Ecological Indicators",
+    "publication_date": "2025-07-01",
+    "authors": "Luo, Lanyang, Wang, Yun, Li, Qing, Li, Mengze, Wang, Jinqi, Zhao, Gang, Ma, Meihong",
+    "doi": "10.1016/j.ecolind.2025.113698"
+  },
+  {
+    "title": "Rapid flood simulation and source area identification in urban environments via interpretable deep learning",
+    "venue": "Journal of Hydrology",
+    "publication_date": "2025-04-01",
+    "authors": "Ren, Hancheng, Pang, Bo, Zhao, Gang, Liu, YuanYuan, Zhang, Hongping, Liu, Shu",
+    "doi": "10.1016/j.jhydrol.2024.132551"
+  },
+  {
+    "title": "Benchmark Framework for Global River Models",
+    "venue": "Journal of Advances in Modeling Earth Systems",
+    "publication_date": "2025-03-01",
+    "authors": "Zhou, Xudong, Yamazaki, Dai, Revel, Menaka, Zhao, Gang, Modi, Prakat",
+    "doi": "10.1029/2024MS004379"
+  },
+  {
+    "title": "Incorporating dynamic drainage supervision into deep learning for accurate real-time flood simulation in urban areas",
+    "venue": "Water Research",
+    "publication_date": "2025-02-01",
+    "authors": "Ren, Hancheng, Pang, Bo, Zhao, Gang, Yu, Haijun, Tian, Peinan, Xie, Chenran",
+    "doi": "10.1016/j.watres.2024.122816"
+  },
+  {
+    "title": "Improving Global Reservoir Parameterizations by Incorporating Flood Storage Capacity Data and Satellite Observations",
+    "venue": "Water Resources Research",
+    "publication_date": "2025-01-01",
+    "authors": "Shen, Youjiang, Yamazaki, Dai, Pokhrel, Yadu, Zhao, Gang",
+    "doi": "10.1029/2024WR037620"
+  },
+  {
+    "title": "A Convolutional Neural Network-Weighted Cellular Automaton Model for the Fast Prediction of Urban Pluvial Flooding Processes",
+    "venue": "International Journal of Disaster Risk Science",
+    "publication_date": "2024-10-01",
+    "authors": "Yang, Jiarui, Liu, Kai, Wang, Ming, Zhao, Gang, Wu, Wei, Yue, Qingrui",
+    "doi": "10.1007/s13753-024-00592-4"
+  },
+  {
+    "title": "Regional variation in the role of humidity on city-level heat-related mortality",
+    "venue": "PNAS Nexus",
+    "publication_date": "2024-08-05",
+    "authors": "Guo, Qiang, Mistry, Malcolm N, Zhou, Xudong, Zhao, Gang, Kino, Kanon, Wen, Bo, Yoshimura, Kei, Satoh, Yusuke, Cvijanovic, Ivana, Kim, Yoonhee, Ng, Chris Fook Sheng, Vicedo-Cabrera, Ana M, Armstrong, Ben, Urban, Aleš, Katsouyanni, Klea, Masselot, Pierre, Tong, Shilu, Sera, Francesco, Huber, Veronika, Bell, Michelle L, Kyselý, Jan, Gasparrini, Antonio, Hashizume, Masahiro, Oki, Taikan, Multi-Country Multi-City (MCC) Collaborative Research Network, Abrutzky, Rosana, Guo, Yuming, de Sousa Zanotti Stagliorio Coelho, Micheline, Nascimento Saldiva, Paulo Hilario, Lavigne, Eric, Ortega, Nicolás Valdés, Correa, Patricia Matus, Kan, Haidong, Osorio, Samuel, Roye, Dominic, Indermitte, Ene, Orru, Hans, Jaakkola, Jouni J K, Ryti, Niilo, Pascal, Mathilde, Schneider, Alexandra, Analitis, Antonis, Entezari, Alireza, Mayvaneh, Fatemeh, Zeka, Ariana, Goodman, Patrick, de'Donato, Francesca, Michelozzi, Paola, Alahmad, Barrak, De la Cruz Valencia, César, Hurtado Diaz, Magali, Overcenco, Ala, Ameling, Caroline, Houthuijs, Danny, Rao, Shilpa, Carrasco, Gabriel, Seposo, Xerxes, Madureira, Joana, das Neves Pereira da Silva, Susana, Holobaca, Iulian-Horia, Acquaotta, Fiorella, Scovronick, Noah, Kim, Ho, Lee, Whanhee, Tobias, Aurelio, Íñiguez, Carmen, Forsberg, Bertil, Ragettli, Martina S, Pan, Shih-Chun, Guo, Yue Leon, Li, Shanshan, Schneider, Rochelle, Colistro, Valentina, Zanobetti, Antonella, Schwartz, Joel, Van Dung, Do, Ngoc Dang, Tran, Honda, Yasushi",
+    "doi": "10.1093/pnasnexus/pgae290"
+  },
+  {
+    "title": "How Does Heavy Precipitation of Varying Durations Respond to Urbanization in China?",
+    "venue": "Earth's Future",
+    "publication_date": "2024-07-01",
+    "authors": "Xie, Xue, Lin, Kairong, Xiao, Mingzhong, Zhou, Xudong, Zhao, Gang, Yamazaki, Dai",
+    "doi": "10.1029/2023EF004412"
+  },
+  {
+    "title": "Scaling from global to regional river flow with global hydrological models: Choice matters",
+    "venue": "Journal of Hydrology",
+    "publication_date": "2024-04-01",
+    "authors": "Tu, Tongbi, Wang, Jiahao, Zhao, Gang, Zhao, Tongtiegang, Dong, Xiaoli",
+    "doi": "10.1016/j.jhydrol.2024.130960"
+  },
+  {
+    "title": "Where in the World Are Vegetation Patterns Controlled by Hillslope Water Dynamics?",
+    "venue": "Water Resources Research",
+    "publication_date": "2024-04-01",
+    "authors": "Li, Shuping, Yamazaki, Dai, Zhou, Xudong, Zhao, Gang",
+    "doi": "10.1029/2023WR036214"
+  },
+  {
+    "title": "Flood Susceptibility Assessment with Random Sampling Strategy in Ensemble Learning (RF and XGBoost)",
+    "venue": "Remote Sensing",
+    "publication_date": "2024-01-12",
+    "authors": "Ren, Hancheng, Pang, Bo, Bai, Ping, Zhao, Gang, Liu, Shu, Liu, Yuanyuan, Li, Min",
+    "doi": "10.3390/rs16020320"
+  },
+  {
+    "title": "Flood Impact Assessment Using Nighttime Light Remote Sensing Data",
+    "venue": null,
+    "publication_date": "2024-01-01",
+    "authors": "HU, Yang, Yamazaki, Dai, Zhou, Xudong, Zhao, Gang",
+    "doi": "10.2139/ssrn.5011700"
+  },
+  {
+    "title": "The Impact of the Spatiotemporal Structure of Rainfall on Flood Frequency Over a Piedmont Urban Basin: An Approach Coupling Machine Learning and Hydrologic Modeling",
+    "venue": null,
+    "publication_date": "2024-01-01",
+    "authors": null,
+    "doi": ""
+  },
+  {
+    "title": "An urban hydrological model for flood simulation in piedmont cities: Case study of Jinan City, China",
+    "venue": "Journal of Hydrology",
+    "publication_date": "2023-10-01",
+    "authors": "Zhao, Yanjun, Xia, Jun, Xu, Zongxue, Qiao, Yunfeng, Zhao, Gang, Zhang, Haoyue",
+    "doi": "10.1016/j.jhydrol.2023.130040"
+  },
+  {
+    "title": "Flood Defense Standard Estimation Using Machine Learning and Its Representation in Large‐Scale Flood Hazard Modeling",
+    "venue": "Water Resources Research",
+    "publication_date": "2023-05-01",
+    "authors": "Zhao, Gang, Bates, Paul D., Neal, Jeff, Yamazaki, Dai",
+    "doi": "10.1029/2022wr032395"
+  },
+  {
+    "title": "Flood Defense Standard Estimation Using Machine Learning and Its Representation in Large‐Scale Flood Hazard Modeling",
+    "venue": "Water Resources Research",
+    "publication_date": "2023-05-01",
+    "authors": "Zhao, Gang, Bates, Paul D., Neal, Jeff, Yamazaki, Dai",
+    "doi": "10.1029/2022WR032395"
+  },
+  {
+    "title": "Design flood estimation for global river networks based on machine learning models",
+    "venue": "Hydrology and Earth System Sciences",
+    "publication_date": "2021-11-22",
+    "authors": "Zhao, Gang, Bates, Paul, Neal, Jeffrey, Pang, Bo",
+    "doi": "10.5194/hess-25-5981-2021"
+  },
+  {
+    "title": "Urban flood susceptibility assessment based on convolutional neural networks",
+    "venue": "Journal of Hydrology",
+    "publication_date": "2020-11-01",
+    "authors": "Zhao, Gang, Pang, Bo, Xu, Zongxue, Peng, Dingzhi, Zuo, Depeng",
+    "doi": "10.1016/j.jhydrol.2020.125235"
+  },
+  {
+    "title": "Modelling the Vegetation Response to Climate Changes in the Yarlung Zangbo River Basin Using Random Forest",
+    "venue": "Water",
+    "publication_date": "2020-05-18",
+    "authors": "Chi, Kaige, Pang, Bo, Cui, Lizhuang, Peng, Dingzhi, Zhu, Zhongfan, Zhao, Gang, Shi, Shulan",
+    "doi": "10.3390/w12051433"
+  },
+  {
+    "title": "Uncertainty Assessment of Urban Hydrological Modelling from a Multiple Objective Perspective",
+    "venue": "Water",
+    "publication_date": "2020-05-14",
+    "authors": "Pang, Bo, Shi, Shulan, Zhao, Gang, Shi, Rong, Peng, Dingzhi, Zhu, Zhongfan",
+    "doi": "10.3390/w12051393"
+  },
+  {
+    "title": "The Impact of Dams on Design Floods in the Conterminous US",
+    "venue": "Water Resources Research",
+    "publication_date": "2020-03-01",
+    "authors": "Zhao, Gang, Bates, Paul, Neal, Jeffrey",
+    "doi": "10.1029/2019WR025380"
+  },
+  {
+    "title": "A hybrid machine learning framework for real-time water level prediction in high sediment load reaches",
+    "venue": "Journal of Hydrology",
+    "publication_date": "2020-02-01",
+    "authors": "Zhao, Gang, Pang, Bo, Xu, Zongxue, Xu, Liyang",
+    "doi": "10.1016/j.jhydrol.2019.124422"
+  },
+  {
+    "title": "An enhanced inundation method for urban flood hazard mapping at the large catchment scale",
+    "venue": "Journal of Hydrology",
+    "publication_date": "2019-04-01",
+    "authors": "Zhao, Gang, Xu, Zongxue, Pang, Bo, Tu, Tongbi, Xu, Liyang, Du, Longgang",
+    "doi": "10.1016/j.jhydrol.2019.02.008"
+  },
+  {
+    "title": "Assessment of urban flood susceptibility using semi-supervised machine learning model",
+    "venue": "Science of The Total Environment",
+    "publication_date": "2019-04-01",
+    "authors": "Zhao, Gang, Pang, Bo, Xu, Zongxue, Peng, Dingzhi, Xu, Liyang",
+    "doi": "10.1016/j.scitotenv.2018.12.217"
+  },
+  {
+    "title": "Flash Flood Risk Analysis Based on Machine Learning Techniques in the Yunnan Province, China",
+    "venue": "Remote Sensing",
+    "publication_date": "2019-01-17",
+    "authors": "Ma, Meihong, Liu, Changjun, Zhao, Gang, Xie, Hongjie, Jia, Pengfei, Wang, Dacheng, Wang, Huixiao, Hong, Yang",
+    "doi": "10.3390/rs11020170"
+  },
+  {
+    "title": "Sensitivity analysis of correlated outputs and its application to a dynamic model",
+    "venue": "Environmental Modelling &amp; Software",
+    "publication_date": "2018-07-01",
+    "authors": "Xu, Liyang, Lu, Zhenzhou, Li, Luyi, Yan Shi, Zhao, Gang",
+    "doi": "10.1016/j.envsoft.2018.03.026"
+  },
+  {
+    "title": "Multiple time scale analysis of sediment and runoff changes in the Lower Yellow River",
+    "venue": "Proceedings of the International Association of Hydrological Sciences",
+    "publication_date": "2018-06-05",
+    "authors": "Chi, Kaige, Gang, Zhao, Pang, Bo, Huang, Ziqian",
+    "doi": "10.5194/piahs-379-357-2018"
+  },
+  {
+    "title": "Mapping flood susceptibility in mountainous areas on a national scale in China",
+    "venue": "Science of The Total Environment",
+    "publication_date": "2018-02-01",
+    "authors": "Zhao, Gang, Pang, Bo, Xu, Zongxue, Yue, Jiajia, Tu, Tongbi",
+    "doi": "10.1016/j.scitotenv.2017.10.037"
+  },
+  {
+    "title": "Estimation of urban flooding processes based on enhanced inundation model,基于改进填洼模型的城市洪涝灾害计算方法",
+    "venue": null,
+    "publication_date": "2018-01-01",
+    "authors": null,
+    "doi": "10.14042/j.cnki.32.1309.2018.01.003"
+  },
+  {
+    "title": "Statistical Downscaling of Temperature with the Random Forest Model",
+    "venue": "Advances in Meteorology",
+    "publication_date": "2017-01-01",
+    "authors": "Pang, Bo, Yue, Jiajia, Zhao, Gang, Xu, Zongxue",
+    "doi": "10.1155/2017/7265178"
+  },
+  {
+    "title": "Impact of urbanization on rainfall-runoff processes:  case study in the Liangshui River Basin in Beijing, China",
+    "venue": "Proceedings of the International Association of Hydrological Sciences",
+    "publication_date": "2016-05-12",
+    "authors": "Xu, Zongxue, Zhao, Gang",
+    "doi": "10.5194/piahs-373-7-2016"
+  },
+  {
+    "title": "Assessment on the hazard of flash flood disasters in China",
+    "venue": null,
+    "publication_date": "2016-01-01",
+    "authors": null,
+    "doi": "10.13243/j.cnki.slxb.20150501"
+  },
+  {
+    "title": "Impact of rapid urbanization on rainfall-runoff processes in urban catchment: Case study for Liangshui River basin",
+    "venue": null,
+    "publication_date": "2016-01-01",
+    "authors": null,
+    "doi": "10.11660/slfdxb.20160507"
+  },
+  {
+    "title": "Urban rainfall-runoff simulations and assessment of low impact development facilities using SWMM model-A case study of Qinghe catchment in Beijing",
+    "venue": null,
+    "publication_date": "2016-01-01",
+    "authors": null,
+    "doi": "10.11660/slfdxb.20161110"
+  }
+]

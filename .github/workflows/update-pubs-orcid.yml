@@ -27,7 +27,7 @@ jobs:
       - name: Run updater (ORCID strict)
         env:
           ORCID: 0000-0002-0278-502X   # ← 你的 ORCID
-          YEARS: '10'                  # 首次可设大些，稳定后改回 5
+          YEARS: '5'                  # 首次可设大些，稳定后改回 5
           UA_EMAIL: ${{ secrets.OPENALEX_MAILTO }}  # 可复用你已有的邮箱，便于 API 识别
         run: python scripts/update_publications_orcid.py
 

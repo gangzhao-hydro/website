@@ -2,7 +2,7 @@ name: Update publications (OpenAlex)
 
 on:
   schedule:
-    - cron: '0 0 * * 1'   # 每周一 00:00 UTC ≈ 周一 09:00 JST
+    - cron: '0 0 * * 1'
   workflow_dispatch:
   push:
     paths:
@@ -35,24 +35,12 @@ jobs:
             echo "MAILTO is SET"
           fi
 
-      - name: "Sanity check OpenAlex (curl: authors by ORCID)"
-        env:
-          MAILTO: ${{ secrets.OPENALEX_MAILTO }}
-        run: |
-          set -e
-          echo "Check 1: authors?filter=orcid:ORCID"
-          curl -sS "https://api.openalex.org/authors?filter=orcid:0000-0002-0278-502X&per-page=1&select=id,display_name,works_count&mailto=${MAILTO}" \
-            -H "User-Agent: OpenAlexUpdater/1.0 (+mailto:${MAILTO})" -H "Accept: application/json" | head -c 400 || true
-          echo ""
-          echo "Check 2: authors?filter=orcid:https://orcid.org/ORCID"
-          curl -sS "https://api.openalex.org/authors?filter=orcid:https://orcid.org/0000-0002-0278-502X&per-page=1&select=id,display_name,works_count&mailto=${MAILTO}" \
-            -H "User-Agent: OpenAlexUpdater/1.0 (+mailto:${MAILTO})" -H "Accept: application/json" | head -c 400 || true
-
-      - name: Run updater
+      - name: Run updater (ORCID strict)
         env:
           ORCID: 0000-0002-0278-502X
-          YEARS: '10'                     # 首次可设大一点确保有数据；稳定后改回 5
+          YEARS: '10'                # 首次可设大些，成功后改回 5
           MAILTO: ${{ secrets.OPENALEX_MAILTO }}
+          STRICT_ORCID_ONLY: 'true'  # ★ 关键：只保留含你 ORCID 的 authorship
         run: python scripts/update_publications_openalex.py
 
       - name: Commit changes
@@ -60,5 +48,5 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _data/pubs_openalex.json || true
-          git commit -m "chore: update publications from OpenAlex" || echo "No changes"
+          git commit -m "chore: update publications from OpenAlex (ORCID strict)" || echo "No changes"
           git push

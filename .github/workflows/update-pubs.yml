@@ -13,9 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - run: pip install requests
 
       - name: Debug MAILTO presence
@@ -28,6 +30,16 @@ jobs:
           else
             echo "MAILTO is SET"
           fi
+
+      - name: Sanity check OpenAlex (curl)
+        env:
+          MAILTO: ${{ secrets.OPENALEX_MAILTO }}
+        run: |
+          set -e
+          echo "Hitting OpenAlex with mailto…"
+          curl -sS "https://api.openalex.org/works?per-page=1&mailto=${MAILTO}" \
+            -H "User-Agent: OpenAlexUpdater/1.0 (+mailto:${MAILTO})" \
+            -H "Accept: application/json" | head -c 200 || true
 
       - name: Run updater
         env:

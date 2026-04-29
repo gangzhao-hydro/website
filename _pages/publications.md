@@ -19,36 +19,14 @@ author_profile: true
   ol.publist li { margin: 0.35em 0; }
 </style>
 
-{% assign count = 0 %}
-
-{%- comment -%} ===== Under review（若有） ===== {%- endcomment -%}
-{% assign under_review = site.publications | where: "status", "under review" | sort: "date" | reverse %}
-{% if under_review.size > 0 %}
-## Under review
-<ol class="publist" start="{{ count | plus: 1 }}">
-  {% for post in under_review %}
-    {% assign count = count | plus: 1 %}
-    <li>
-      {{ post.authors }}.
-      {{ post.title }}.
-      {% if post.venue %}<em>{{ post.venue }}</em>.{% endif %}
-      {% if post.doi %}
-        <a href="https://doi.org/{{ post.doi }}">doi:{{ post.doi }}</a>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ol>
-{% endif %}
-
 {%- comment -%} ===== Peer-reviewed（近五年） ===== {%- endcomment -%}
 {% assign cutoff_year = site.time | date: "%Y" | plus: 0 | minus: 5 %}
 {% assign published = site.publications | reject: "status", "under review" | sort: "date" | reverse %}
 
 ## Peer-reviewed (last five years)
 {% assign pubs = site.data.pubs_orcid %}
-<ol class="publist" start="{{ count | plus: 1 }}">
+<ol class="publist">
   {% for p in pubs %}
-    {% assign count = count | plus: 1 %}
     <li>
       {{ p.authors | default: site.author.name }}{% if p.publication_date %} ({{ p.publication_date | date: "%Y" }}){% endif %}.
       {{ p.title }}.

@@ -1,18 +1,10 @@
-# main links links
+# Header navigation
 main:
-
-  - title: "Research"
-    url: /publications/
+  - title: "Home"
+    url: /
 
   - title: "Publications"
     url: /publications/
- 
-  - title: "Members"
-    url: /teaching/      
-        
-  - title: "News"
-    url: /talks/
-    
+
   - title: "CV"
     url: /cv/
-    

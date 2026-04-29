@@ -12,9 +12,9 @@ title                    : "Flood Hydro Group"
 title_separator          : "-"
 name                     : &name "ZHAO Gang"
 description              : &description "Assistant Professor"
-url                      : https://gangzhao-hydro.github.io/website # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://gangzhao-hydro.github.io/website"
+url                      : https://gangzhao-hydro.github.io # the base hostname & protocol for your site
+baseurl                  : "/website" # the subpath of your GitHub Pages project site
+repository               : "gangzhao-hydro/website"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -26,9 +26,9 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Assistant Professor"
   location         : "Tokyo"
-  employer         : "Tokyo Institute of Technology"
+  employer         : "Institute of Science Tokyo"
   uri              : # URL
-  email            : "zhao.g.ag@m.titech.ac.jp" 
+  email            : "zhao.g.eb91@m.isct.ac.jp" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile

@@ -45,7 +45,7 @@ author_profile: true
 {% assign published = site.publications | reject: "status", "under review" | sort: "date" | reverse %}
 
 ## Peer-reviewed (last five years)
-{% assign pubs = site.data.pubs_orcid | default: [] %}
+{% assign pubs = site.data.pubs_orcid %}
 <ol class="publist" start="{{ count | plus: 1 }}">
   {% for p in pubs %}
     {% assign count = count | plus: 1 %}

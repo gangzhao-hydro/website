@@ -18,40 +18,26 @@ Education
 Work experience
 ======
 * 2024-present: Assistant Professor
-  * Tokyo Institute of Technology, Japan
+  * Institute of Science Tokyo, Japan
   * Group: Kinouchi Lab 
 
 * 2022-2023: Postdoc researcher
   * University of Tokyo, Japan
   * Group: Global Hydrodynamics Lab (with Dr Dai Yamazaki)
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
-Publications
+Projects
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+* 2026-2029: Grant-in-Aid for Scientific Research (A): The Timing of Flood Risk Emergence under Climate Change: Understanding the Influence of Flood Protection (Co-PI)
+* 2026-2027: Kurata Grants: Integrating Levee Systems into Global Flood Modelling for Flood Hazard and Risk Assessment under Climate Change (PI)
+* 2024-2026: Grant-in-Aid for Early-Career Scientists: Enhancing the Accuracy and Interpretability of Global Flood Models with AI: Development of a Physics-Guided Deep Learning Model Considering River Network Topology (PI)
+* 2022-2026: Moonshot R&D Goal 8: Control Theory of Weather-Society Coupling Systems for Supporting Social Decision-Making (Collaborator)
+* 2025-2027: JSPS Bilateral Program: Implementing GPU-based Solution into a Global River Hydrodynamics Model for Advanced Flood Risk Simulations (Collaborator)
+
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+Graduate Course
+
+Graduate School of Global Engineering for Development, Environment and Society
+
+* Hydrology and Water Resources Conservation
+* Project Design and Management

@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <p style="text-align: justify;">
-My name is Zhao Gang (赵刚). I am currently working as an Assistant Professor at the <a href="https://www.titech.ac.jp/english/about/organization/schools/organization06">School of Environment and Society at the Tokyo Institute of Technology</a>. I research with Prof. Tsuyoshi Kinouchi. You can visit our research group website here: <a href="http://fa.depe.titech.ac.jp/kinouchi/index-j.html">木内研究室</a>.
+My name is Zhao Gang (赵刚). I am currently working as an Assistant Professor at the <a href="https://www.isct.ac.jp/en">Institute of Science Tokyo</a>. I research with Prof. Tsuyoshi Kinouchi. You can visit our research group website here: <a href="http://fa.depe.titech.ac.jp/kinouchi/index-j.html">木内研究室</a>.
 </p>
 
 Research interests: Flood hazard and risk
@@ -19,7 +19,7 @@ The need for accurate flood hazard maps has grown significantly due to increasin
 </p>
 
 <p style="text-align: justify;">
-<img src="/website/images/Figure1.jpg" alt="Figure 1">
+<img src="{{ '/images/Figure1.jpg' | relative_url }}" alt="Figure 1">
 </p>
 
 <p style="text-align: justify;">
@@ -30,16 +30,15 @@ My research interests primarily focus on flood modeling, using physics-based mod
 News
 ======
 <p style="text-align: justify;">
-<strong>1. CaMa-Flood developer/user international meeting</strong><br>
-We hosted the first CaMa-Flood meeting on 5th and 6th July, 2024 (Friday and Saturday) at the Institute of Industrial Science, The University of Tokyo. Meeting details can be found on the <a href="https://global-hydrodynamics.github.io/cmf-meet-2024/">meeting webpage</a>.
+<strong>1. CaMa-Flood meeting 2026</strong><br>
+The 2nd CaMa-Flood developer/user international meeting will be held on 10-11 September 2026 at the ECMWF headquarters in Reading, United Kingdom. The meeting aims to bring together CaMa-Flood developers, users, and the broader global hydrodynamics community to exchange recent advances in large-scale river modelling, satellite-based validation and data assimilation, flood risk assessment, and future model development. Registration and abstract submission are now open. More information is available on the <a href="https://global-hydrodynamics.github.io/cmf-meet/">meeting webpage</a>.
 </p>
 
 <p style="text-align: justify;">
-<img src="/website/images/CMF-meeting.JPG" alt="CMF-meeting">
+<img src="{{ '/images/CMF-meeting.JPG' | relative_url }}" alt="CMF-meeting">
 </p>
 
 <p style="text-align: justify;">
-Also, we are planning to host the "Advances in Global River Modeling" session in AOGS2025, scheduled for August 2025 in Singapore.
+<strong>2. AOGS 2026 session HS47</strong><br>
+Together with Guoqiang Tang, Bin Yong, Yixin Wen, and Li Zhou, I am co-organizing the AOGS 2026 Hydrological Sciences session HS47, "AI-driven Observation, Modeling, and Prediction of Precipitation and Hydrological Extremes." The 23rd AOGS Annual Meeting will be held in Fukuoka, Japan, on 2-7 August 2026. This session welcomes studies on AI-based precipitation observation and retrieval, multi-source precipitation data fusion, hybrid physical-AI rainfall-runoff modelling, identification and attribution of hydrological extremes, early warning and probabilistic risk prediction, and climate-change impacts on extreme events. Abstract submission is open, with a deadline of 23 January 2026.
 </p>
-
-

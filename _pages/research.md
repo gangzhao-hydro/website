@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Research Interests"
+description: "Research interests of Gang Zhao: mountain flash floods, river floods, urban floods, hydrological and hydrodynamic modelling, remote sensing, and artificial intelligence for flood risk assessment."
 permalink: /research/
 author_profile: true
 ---

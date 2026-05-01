@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "CV"
+description: "Curriculum vitae of Gang Zhao, Assistant Professor at Institute of Science Tokyo, including education, work experience, projects, and teaching."
 permalink: /cv/
 author_profile: true
 redirect_from:

@@ -1,6 +1,7 @@
 ---
 permalink: /
-title: "Hello and welcome to my homepage!"
+title: "Gang Zhao - Flood Hydrology and Flood Risk Research"
+description: "Gang Zhao is an Assistant Professor at Institute of Science Tokyo working on flood modelling, hydrodynamics, AI, mountain flash floods, river floods, and urban floods."
 author_profile: true
 redirect_from: 
   - /about/

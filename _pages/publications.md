@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Publications"
+description: "Selected peer-reviewed publications by Gang Zhao on flood modelling, flash flood warning, hydrology, hydrodynamics, and flood risk."
 permalink: /publications/
 author_profile: true
 ---

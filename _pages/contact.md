@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Contact Us"
+description: "Contact information for Gang Zhao at Institute of Science Tokyo, including academic email, personal email, laboratory address, and campus map."
 permalink: /contact/
 author_profile: true
 ---

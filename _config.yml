@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Flood Hydro Group"
+title                    : "Gang Zhao | Flood Hydro Group"
 title_separator          : "-"
 name                     : &name "ZHAO Gang"
-description              : &description "Assistant Professor"
+description              : &description "Gang Zhao is an Assistant Professor at Institute of Science Tokyo working on flood modelling, hydrodynamics, artificial intelligence, mountain flash floods, river floods, and urban floods."
 url                      : https://gangzhao-hydro.github.io # the base hostname & protocol for your site
 baseurl                  : "/website" # the subpath of your GitHub Pages project site
 repository               : "gangzhao-hydro/website"
@@ -227,6 +227,8 @@ defaults:
       comments: true
       share: true
       related: true
+      sitemap: false
+      noindex: true
   # _pages
   - scope:
       path: ""
@@ -234,6 +236,19 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # AcademicPages sample/support folders that should not appear in search.
+  - scope:
+      path: "files"
+    values:
+      sitemap: false
+  - scope:
+      path: "talkmap"
+    values:
+      sitemap: false
+  - scope:
+      path: "markdown_generator"
+    values:
+      sitemap: false
   # _teaching
   - scope:
       path: ""
@@ -243,6 +258,8 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      sitemap: false
+      noindex: true
   # _publications
   - scope:
       path: ""
@@ -252,6 +269,8 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      sitemap: false
+      noindex: true
   # _portfolio
   - scope:
       path: ""
@@ -261,6 +280,8 @@ defaults:
       author_profile: true
       share: true
       comment: true
+      sitemap: false
+      noindex: true
   # _talks
   - scope:
       path: ""
@@ -269,6 +290,8 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+      sitemap: false
+      noindex: true
 
 
 # Sass/SCSS

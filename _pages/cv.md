@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "CV"
-description: "Curriculum vitae of Gang Zhao, Assistant Professor at Institute of Science Tokyo, including education, work experience, projects, and teaching."
+description: "Curriculum vitae of Gang Zhao, an independent principal investigator and Assistant Professor at Tokyo Institute of Technology, including education, work experience, projects, and teaching."
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -18,8 +18,8 @@ Education
 
 Work experience
 ======
-* 2024-present: Assistant Professor
-  * Institute of Science Tokyo, Japan
+* 2024-present: Independent Principal Investigator (PI) and Assistant Professor
+  * Tokyo Institute of Technology, Japan
   * Group: Kinouchi Lab 
 
 * 2022-2023: Postdoc researcher

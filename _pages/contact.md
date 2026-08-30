@@ -1,24 +1,24 @@
 ---
 layout: archive
 title: "Contact Us"
-description: "Contact information for Gang Zhao, an independent principal investigator and research group lead at Tokyo Institute of Technology."
+description: "Contact information for Gang Zhao, an independent principal investigator and research group lead at The University of Tokyo."
 permalink: /contact/
 author_profile: true
 ---
 
 Principal Investigator
 ======
-Gang Zhao is an independent principal investigator (PI) and research group lead at Tokyo Institute of Technology.
+Gang Zhao is an independent principal investigator (PI) and research group lead at The University of Tokyo.
 
 Email
 ======
-Academic email: <a href="mailto:zhao.g.ag@m.titech.ac.jp">zhao.g.ag@m.titech.ac.jp</a><br>
+Academic email: <a href="mailto:gangzhao@iis.u-tokyo.ac.jp">gangzhao@iis.u-tokyo.ac.jp</a><br>
 Personal email: <a href="mailto:gangzhao.hydro@outlook.com">gangzhao.hydro@outlook.com</a>
 
 Laboratory Address
 ======
 〒226-8503  
-Tokyo Institute of Technology<br>
+The University of Tokyo<br>
 School of Environment and Society  
 G5-4, 4259 Nagata-cho, Midori-ku, Yokohama-shi, Japan
 

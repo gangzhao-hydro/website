@@ -2,7 +2,7 @@
 permalink: /
 title: "Hello and welcome to my homepage!"
 seo_title: "Gang Zhao - Flood Hydrology and Flood Risk Research"
-description: "Gang Zhao is an independent principal investigator and Assistant Professor at Tokyo Institute of Technology working on flood modelling, hydrodynamics, AI, mountain flash floods, river floods, and urban floods."
+description: "Gang Zhao is an independent principal investigator and Assistant Professor at The University of Tokyo working on flood modelling, hydrodynamics, AI, mountain flash floods, river floods, and urban floods."
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 <p style="text-align: justify;">
-My name is Zhao Gang (赵刚). I am an independent principal investigator (PI) and research group lead, serving as an Assistant Professor at <a href="https://www.titech.ac.jp/english">Tokyo Institute of Technology</a>. I research with Prof. Tsuyoshi Kinouchi. You can visit our research group website here: <a href="http://fa.depe.titech.ac.jp/kinouchi/index-j.html">木内研究室</a>.
+My name is Zhao Gang (赵刚). I am an independent principal investigator (PI) and research group lead, serving as an Assistant Professor at <a href="https://www.u-tokyo.ac.jp/en/">The University of Tokyo</a>.
 </p>
 
 Research interests: Flood hazard and risk

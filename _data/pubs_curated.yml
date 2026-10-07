@@ -1,0 +1,14 @@
+# Verified from ResearchGate and publisher-deposited Crossref metadata, 2026-10-07.
+# Lowercase DOIs match the automated ORCID data and prevent duplicate entries.
+- title: "A Graph-Based Deep Learning Approach for Daily Flash Flood Susceptibility Modeling in China"
+  authors: "Liu, Jun, Zhao, Gang, Xiong, Junnan, Kinouchi, Tsuyoshi"
+  venue: "Water Resources Research"
+  publication_date: "2026-03-31"
+  doi: "10.1029/2025wr041360"
+  source: "https://api.crossref.org/works/10.1029/2025WR041360"
+- title: "Understanding Compound Pluvial–Fluvial Flood Hazards Under Climate Change: A Case Study of the Lower Tone River Basin, Japan"
+  authors: "Liang, Shuoyuan, Kinouchi, Tsuyoshi, Bates, Paul D., Zhao, Gang"
+  venue: "Hydrological Processes"
+  publication_date: "2026-02"
+  doi: "10.1002/hyp.70403"
+  source: "https://api.crossref.org/works/10.1002/hyp.70403"

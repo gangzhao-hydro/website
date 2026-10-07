@@ -51,7 +51,7 @@ def canon_doi(doi: str) -> str:
         if doi.lower().startswith(pref):
             doi = doi[len(pref):]
             break
-    return doi.strip().strip('/')
+    return doi.strip().strip('/').lower()
 
 
 def orcid_works(orcid: str) -> List[Dict]:

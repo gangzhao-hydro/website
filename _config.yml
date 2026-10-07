@@ -7,11 +7,11 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
-title                    : "Gang Zhao | Flood Hydro Group"
+locale                   : "en-GB"
+title                    : "Gang Zhao"
 title_separator          : "-"
-name                     : &name "ZHAO Gang"
-description              : &description "Gang Zhao is an independent principal investigator and Assistant Professor at The University of Tokyo working on flood modelling, hydrodynamics, artificial intelligence, mountain flash floods, river floods, and urban floods."
+name                     : &name "Gang Zhao"
+description              : &description "Gang Zhao is an Assistant Professor and principal investigator at Institute of Science Tokyo, working on flood modelling, hydrodynamics, artificial intelligence, and flood risk."
 url                      : https://gangzhao-hydro.github.io # the base hostname & protocol for your site
 baseurl                  : "/website" # the subpath of your GitHub Pages project site
 repository               : "gangzhao-hydro/website"
@@ -22,13 +22,13 @@ repository               : "gangzhao-hydro/website"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "ZHAO GANG"
+  name             : "Gang Zhao"
   pronouns         : # example: "she/her"  
-  bio              : "Independent PI & Assistant Professor"
-  location         : "Tokyo"
-  employer         : "The University of Tokyo"
-  uri              : # URL
-  email            : "gangzhao@iis.u-tokyo.ac.jp"
+  bio              : "Assistant Professor & Principal Investigator"
+  location         : "Yokohama, Japan"
+  employer         : "Institute of Science Tokyo"
+  uri              : "https://strdb.s.isct.ac.jp/html/100003457_en.html"
+  email            : "zhao.g.eb91@m.isct.ac.jp"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -78,7 +78,7 @@ author:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -108,7 +108,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true
   path                   : # blank (default) uses feed.xml
 
 
@@ -133,6 +133,8 @@ social:
   type                   : "Person" # Person or Organization (defaults to Person)
   name                   : "Gang Zhao" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://strdb.s.isct.ac.jp/html/100003457_en.html"
+    - "https://nrid.nii.ac.jp/en/nrid/1000090985433/"
     - "https://scholar.google.com/citations?user=2UcV-9kAAAAJ&hl=en&oi=sra"
     - "https://orcid.org/0000-0002-0278-502X"
     - "https://www.researchgate.net/profile/Gang-Zhao-8"
@@ -149,8 +151,35 @@ analytics:
 include:
   - .htaccess
   - _pages
-  - files
 exclude:
+  # Retain template examples in Git, but never publish them.
+  - _posts
+  - _teaching
+  - _talks
+  - _portfolio
+  - _publications/2010-10-01-paper-title-number-2.md
+  - _publications/2015-10-01-paper-title-number-3.md
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/terms.md
+  - _pages/year-archive.html
+  - files
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - markdown_generator
+  - scripts
+  - Gemfile.lock
+  - CONTRIBUTING.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -307,7 +336,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Tokyo
 
 
 # Plugins

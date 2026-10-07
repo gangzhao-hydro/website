@@ -1,5 +1,6 @@
 # Ignore the contents of the _site directory
 _site/
+.sass-cache/
 .DS_Store
 _data/*.pdf
 

@@ -13,5 +13,6 @@ A concise list of the main pages on this academic website. The XML version is av
 * [Home]({{ base_path }}/)
 * [Research Interests]({{ base_path }}/research/)
 * [Publications]({{ base_path }}/publications/)
+* [People]({{ base_path }}/people/)
 * [CV]({{ base_path }}/cv/)
-* [Contact Us]({{ base_path }}/contact/)
+* [Contact]({{ base_path }}/contact/)

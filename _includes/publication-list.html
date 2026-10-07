@@ -1,0 +1,30 @@
+<div class="publications-by-year">
+{% comment %}Separate curated records survive automated ORCID refreshes. Normalize keys here as well as in the updater.{% endcomment %}
+{% assign pubs = site.data.pubs_curated | concat: site.data.pubs_orcid | sort: 'publication_date' | reverse %}
+{% assign current_year = '' %}
+{% assign seen_keys = '' %}
+{% for p in pubs %}
+{% assign pub_key = p.doi | default: p.title | downcase %}
+{% capture wrapped_key %}|{{ pub_key }}|{% endcapture %}
+{% unless seen_keys contains wrapped_key %}
+{% assign seen_keys = seen_keys | append: wrapped_key %}
+{% assign pub_year = p.publication_date | slice: 0, 4 %}
+{% if pub_year != current_year %}
+{% unless current_year == '' %}</ol>{% endunless %}
+<h2 id="year-{{ pub_year }}">{{ pub_year }}</h2>
+<ol class="publist">
+{% assign current_year = pub_year %}
+{% endif %}
+<li>
+{% if p.doi and p.doi != '' %}
+<a class="publication-title" href="https://doi.org/{{ p.doi | escape }}">{{ p.title | escape }}</a>
+{% else %}
+<strong class="publication-title">{{ p.title | escape }}</strong>
+{% endif %}
+{% if p.authors and p.authors != '' %}<span class="publication-authors">{{ p.authors | escape | replace: 'Zhao, Gang', '<strong>Zhao, Gang</strong>' }}</span>{% endif %}
+<span class="publication-venue">{% if p.doi contains 'ssrn' %}<em>SSRN preprint (not peer-reviewed)</em>{% elsif p.venue and p.venue != '' %}<em>{{ p.venue | escape }}</em>{% else %}<a href="{{ site.author.googlescholar }}">Publication details on Google Scholar</a>{% endif %} · {{ pub_year }}</span>
+</li>
+{% endunless %}
+{% endfor %}
+{% unless current_year == '' %}</ol>{% endunless %}
+</div>

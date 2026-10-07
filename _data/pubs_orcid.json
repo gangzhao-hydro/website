@@ -39,7 +39,7 @@
     "venue": "Journal of Advances in Modeling Earth Systems",
     "publication_date": "2025-03-01",
     "authors": "Zhou, Xudong, Yamazaki, Dai, Revel, Menaka, Zhao, Gang, Modi, Prakat",
-    "doi": "10.1029/2024MS004379"
+    "doi": "10.1029/2024ms004379"
   },
   {
     "title": "Incorporating dynamic drainage supervision into deep learning for accurate real-time flood simulation in urban areas",
@@ -53,7 +53,7 @@
     "venue": "Water Resources Research",
     "publication_date": "2025-01-01",
     "authors": "Shen, Youjiang, Yamazaki, Dai, Pokhrel, Yadu, Zhao, Gang",
-    "doi": "10.1029/2024WR037620"
+    "doi": "10.1029/2024wr037620"
   },
   {
     "title": "A Convolutional Neural Network-Weighted Cellular Automaton Model for the Fast Prediction of Urban Pluvial Flooding Processes",
@@ -74,7 +74,7 @@
     "venue": "Earth's Future",
     "publication_date": "2024-07-01",
     "authors": "Xie, Xue, Lin, Kairong, Xiao, Mingzhong, Zhou, Xudong, Zhao, Gang, Yamazaki, Dai",
-    "doi": "10.1029/2023EF004412"
+    "doi": "10.1029/2023ef004412"
   },
   {
     "title": "Scaling from global to regional river flow with global hydrological models: Choice matters",
@@ -88,7 +88,7 @@
     "venue": "Water Resources Research",
     "publication_date": "2024-04-01",
     "authors": "Li, Shuping, Yamazaki, Dai, Zhou, Xudong, Zhao, Gang",
-    "doi": "10.1029/2023WR036214"
+    "doi": "10.1029/2023wr036214"
   },
   {
     "title": "Flood Susceptibility Assessment with Random Sampling Strategy in Ensemble Learning (RF and XGBoost)",
@@ -130,7 +130,7 @@
     "venue": "Water Resources Research",
     "publication_date": "2023-05-01",
     "authors": "Zhao, Gang, Bates, Paul D., Neal, Jeff, Yamazaki, Dai",
-    "doi": "10.1029/2022WR032395"
+    "doi": "10.1029/2022wr032395"
   },
   {
     "title": "Design flood estimation for global river networks based on machine learning models",

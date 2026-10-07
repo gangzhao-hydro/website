@@ -3,7 +3,7 @@ permalink: /
 layout: archive
 title: "Gang Zhao"
 seo_title: "Gang Zhao - Flood Hydrology and Flood Risk Research"
-description: "Gang Zhao is an Assistant Professor and principal investigator at Institute of Science Tokyo. His research combines hydrodynamic modelling, remote sensing, and AI for flood hazard and risk assessment."
+description: "Gang Zhao (ZHAO GANG) is an Assistant Professor at Institute of Science Tokyo and Principal Investigator of JSPS KAKENHI 24K17353, researching hydrology, hydroengineering and flood risk using physical models, remote sensing and AI."
 author_profile: true
 redirect_from:
   - /about/
@@ -17,13 +17,22 @@ redirect_from:
   <p><strong>Institute of Science Tokyo (東京科学大学)</strong><br>
   Department of Transdisciplinary Science and Engineering<br>
   School of Environment and Society</p>
-  <p>I am Gang Zhao (赵刚). I develop hydrological and hydrodynamic models that combine physical understanding, remote sensing, and artificial intelligence to improve flood prediction and risk assessment.</p>
+  <p>I am Gang Zhao (赵刚; listed as ZHAO GANG in university and KAKEN records), an Assistant Professor at Institute of Science Tokyo and Principal Investigator of JSPS KAKENHI project 24K17353. My research is in hydrology, hydroengineering, and flood risk. I develop hydrological and hydrodynamic models that combine physical understanding, remote sensing, and artificial intelligence to improve flood prediction and risk assessment.</p>
+  <p><strong>Institutional email:</strong> <a href="mailto:zhao.g.eb91@m.isct.ac.jp">zhao.g.eb91@m.isct.ac.jp</a></p>
   <div class="profile-links" aria-label="Academic profiles and contact">
-    <a href="https://strdb.s.isct.ac.jp/html/100003457_en.html">University profile</a>
-    <a href="https://nrid.nii.ac.jp/en/nrid/1000090985433/">KAKEN profile</a>
-    <a href="mailto:zhao.g.eb91@m.isct.ac.jp">Email me</a>
+    <a href="https://strdb.s.isct.ac.jp/html/100003457_en.html">Official Science Tokyo faculty profile</a>
+    <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K17353/">KAKEN project record (PI)</a>
+    <a href="{{ '/people/' | relative_url }}">Research team and students</a>
   </div>
 </div>
+
+## Academic appointment and research leadership
+
+My [official university faculty profile](https://strdb.s.isct.ac.jp/html/100003457_en.html) lists my appointment as **Assistant Professor, School of Environment and Society, Institute of Science Tokyo**.
+
+I lead **JSPS KAKENHI project 24K17353** as **Principal Investigator**, from **1 April 2024 to 31 March 2027**. The [official KAKEN project record](https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K17353/) identifies ZHAO GANG (researcher number **90985433**) as the PI and Institute of Science Tokyo as the research institution. The project is funded under the Grant-in-Aid for Early-Career Scientists programme, in **Basic Section 22040: Hydroengineering-related**.
+
+The project develops physics-guided deep learning for global flood models, incorporating river-network topology. Alongside this funded research, I supervise and mentor graduate research in flood hydrology. See [research team and students]({{ '/people/' | relative_url }}) and [all funded projects]({{ '/cv/#funded-research' | relative_url }}).
 
 ## Research
 
@@ -35,7 +44,7 @@ My research spans mountain flash floods, river floods, and urban inundation, wit
   <a href="{{ '/research/#urban-floods' | relative_url }}"><strong>Urban floods</strong><span>Rapid inundation modelling and risk assessment</span></a>
 </div>
 
-I lead JSPS KAKENHI project [24K17353](https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K17353/) as PI, developing physics-guided AI for global flood modelling. I am also the lead recipient of [Kurata Grant 1666](https://www.hitachi-zaidan.com/global/topics/topics016.html) on representing levees in global flood models.
+I am also the lead recipient of [Kurata Grant 1666](https://www.hitachi-zaidan.com/global/topics/topics016.html) on representing levees in global flood models.
 
 [Funded projects]({{ '/cv/#funded-research' | relative_url }}) · [Research team and students]({{ '/people/' | relative_url }})
 

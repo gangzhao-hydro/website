@@ -8,6 +8,8 @@ author_profile: true
 
 My research at Institute of Science Tokyo focuses on flood modelling and risk assessment by combining hydrological and hydrodynamic models, remote sensing, and artificial intelligence. The work spans three connected research directions.
 
+The scientific focus is **hydrology, hydroengineering, and flood hazards**. Physics-based simulation, remote sensing, and AI are complementary methods used to investigate these water-related processes. My PI-led [KAKENHI project 24K17353](https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K17353/) is classified under **Basic Section 22040: Hydroengineering-related**.
+
 ## Mountain flash floods
 
 Mountain flash floods are short-duration, high-impact disasters that are difficult to predict because observations are often sparse in mountainous and hilly regions. My work focuses on large-scale flash flood susceptibility assessment and early warning, using terrain, rainfall, land surface, soil moisture, and historical disaster information. A key direction is to develop warning methods that remain useful in ungauged or data-limited basins.

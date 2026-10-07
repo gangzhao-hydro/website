@@ -11,7 +11,7 @@ locale                   : "en-GB"
 title                    : "Gang Zhao"
 title_separator          : "-"
 name                     : &name "Gang Zhao"
-description              : &description "Gang Zhao is an Assistant Professor and principal investigator at Institute of Science Tokyo, working on flood modelling, hydrodynamics, artificial intelligence, and flood risk."
+description              : &description "Gang Zhao is an Assistant Professor at Institute of Science Tokyo and Principal Investigator of JSPS KAKENHI 24K17353. His research in hydrology and hydroengineering combines physical models, remote sensing and AI to study flood hazards and risk."
 url                      : https://gangzhao-hydro.github.io # the base hostname & protocol for your site
 baseurl                  : "/website" # the subpath of your GitHub Pages project site
 repository               : "gangzhao-hydro/website"

@@ -11,7 +11,9 @@ I supervise and mentor graduate research in flood hydrology, hydrodynamic modell
 ## Principal investigator
 
 **Gang Zhao** — Assistant Professor, Department of Transdisciplinary Science and Engineering, School of Environment and Society, Institute of Science Tokyo.<br>
-[Official university profile](https://strdb.s.isct.ac.jp/html/100003457_en.html) · [Funded projects]({{ '/cv/#funded-research' | relative_url }})
+Principal Investigator, **JSPS KAKENHI 24K17353**, April 2024–March 2027 (researcher number 90985433).<br>
+Institutional email: [zhao.g.eb91@m.isct.ac.jp](mailto:zhao.g.eb91@m.isct.ac.jp).<br>
+[Official university profile](https://strdb.s.isct.ac.jp/html/100003457_en.html) · [Official KAKEN project record (PI)](https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K17353/) · [Funded projects]({{ '/cv/#funded-research' | relative_url }})
 
 ## Postdoctoral researcher
 

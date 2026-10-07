@@ -20,17 +20,17 @@ redirect_from:
   <p>I am Gang Zhao (赵刚; listed as ZHAO GANG in university and KAKEN records), an Assistant Professor at Institute of Science Tokyo and Principal Investigator of JSPS KAKENHI project 24K17353. My research is in hydrology, hydroengineering, and flood risk. I develop hydrological and hydrodynamic models that combine physical understanding, remote sensing, and artificial intelligence to improve flood prediction and risk assessment.</p>
   <p><strong>Institutional email:</strong> <a href="mailto:zhao.g.eb91@m.isct.ac.jp">zhao.g.eb91@m.isct.ac.jp</a></p>
   <div class="profile-links" aria-label="Academic profiles and contact">
-    <a href="https://strdb.s.isct.ac.jp/html/100003457_en.html">Official Science Tokyo faculty profile</a>
-    <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K17353/">KAKEN project record (PI)</a>
+    <a href="https://strdb.s.isct.ac.jp/html/100003457_en.html" target="_blank" rel="noopener noreferrer">Official Science Tokyo faculty profile</a>
+    <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K17353/" target="_blank" rel="noopener noreferrer">KAKEN project record (PI)</a>
     <a href="{{ '/people/' | relative_url }}">Research team and students</a>
   </div>
 </div>
 
 ## Academic appointment and research leadership
 
-My [official university faculty profile](https://strdb.s.isct.ac.jp/html/100003457_en.html) lists my appointment as **Assistant Professor, School of Environment and Society, Institute of Science Tokyo**.
+My [official university faculty profile](https://strdb.s.isct.ac.jp/html/100003457_en.html){:target="_blank" rel="noopener noreferrer"} lists my appointment as **Assistant Professor, School of Environment and Society, Institute of Science Tokyo**.
 
-I lead **JSPS KAKENHI project 24K17353** as **Principal Investigator**, from **1 April 2024 to 31 March 2027**. The [official KAKEN project record](https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K17353/) identifies ZHAO GANG (researcher number **90985433**) as the PI and Institute of Science Tokyo as the research institution. The project is funded under the Grant-in-Aid for Early-Career Scientists programme, in **Basic Section 22040: Hydroengineering-related**.
+I lead **JSPS KAKENHI project 24K17353** as **Principal Investigator**, from **1 April 2024 to 31 March 2027**. The [official KAKEN project record](https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K17353/){:target="_blank" rel="noopener noreferrer"} identifies ZHAO GANG (researcher number **90985433**) as the PI and Institute of Science Tokyo as the research institution. The project is funded under the Grant-in-Aid for Early-Career Scientists programme, in **Basic Section 22040: Hydroengineering-related**.
 
 The project develops physics-guided deep learning for global flood models, incorporating river-network topology. Alongside this funded research, I supervise and mentor graduate research in flood hydrology. See [research team and students]({{ '/people/' | relative_url }}) and [all funded projects]({{ '/cv/#funded-research' | relative_url }}).
 

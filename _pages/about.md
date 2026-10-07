@@ -22,7 +22,6 @@ redirect_from:
   <div class="profile-links" aria-label="Academic profiles and contact">
     <a href="https://strdb.s.isct.ac.jp/html/100003457_en.html" target="_blank" rel="noopener noreferrer">Official Science Tokyo faculty profile</a>
     <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K17353/" target="_blank" rel="noopener noreferrer">KAKEN project record (PI)</a>
-    <a href="https://researchmap.jp/gangzhao.hydro?lang=en" target="_blank" rel="noopener noreferrer">researchmap</a>
     <a href="{{ '/people/' | relative_url }}">Research team and students</a>
   </div>
 </div>
